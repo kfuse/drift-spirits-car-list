@@ -1,0 +1,14 @@
+{
+  "name": "spirit_cars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "list.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kfuse",
+  "license": "ISC",
+  "devDependencies": {
+    "vue": "^1.0.18"
+  }
+}
