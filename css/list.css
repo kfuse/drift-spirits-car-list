@@ -27,6 +27,13 @@ body {
     padding: 10px;
     background: #eee;
 }
+.labelStatus {
+    display: block;
+    float: left;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 14px;
+}
 .btnStars {
     display: block;
     float: left;
@@ -113,13 +120,29 @@ body {
     border-collapse: collapse;
     font-size: 14px;
 }
+.carList th {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #888;
+    color: #fff;
+    /*
+    background: #eaf7fd;
+    */
+}
 .carList td {
     padding: 5px;
     border: 1px solid #ddd;
     background: #f8f8f8;
 }
-.carList th {
-    padding: 5px;
-    border: 1px solid #ddd;
-    background: #eaf7fd;
+@media screen and (max-width: 500px) {
+    #wrapper {
+        width: auto;
+    }
+    .carListTool {
+        height: 55px;
+    }
+    .labelStatus {
+        float: none;
+        margin-top: 0;
+    }
 }
