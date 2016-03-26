@@ -11,6 +11,9 @@ body {
 #content {
     padding: 10px;
 }
+.text {
+    font-size: 14px;
+}
 .mainTitle {
     margin: 0 0 20px;
     padding: 40px 20px;
@@ -146,5 +149,9 @@ body {
     .labelStatus {
         float: none;
         margin-top: 0;
+    }
+}
+@media screen and (max-width: 412px) {
+    .carList {
     }
 }
