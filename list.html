@@ -23,6 +23,76 @@
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
 <a href="#" class="btnPlus plusStatus{{plus}}" v-on:click="incrementPlus"><span class="firstPlus">+</span><span class="secondPlus">+</span></a>
+<a href="#" class="btnParts" v-on:click="toggleParts">パーツ</a>
+</div>
+<div class="parts clearfix close" id="threeStarsParts">
+<ul>
+<li>
+<dl class="clearfix">
+<dt>愛車レベル</dt>
+<dd>レベル: <input type="tel" v-model="carLevel" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>エンジン</dt>
+<dd>サイズ: <input type="tel" v-model="parts.engine.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.engine.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>トランスミッション</dt>
+<dd>サイズ: <input type="tel" v-model="parts.transmission.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.transmission.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>タイヤ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.tire.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.tire.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ニトロ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.nitro.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.nitro.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ECU</dt>
+<dd>サイズ: <input type="tel" v-model="parts.ecu.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.ecu.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free1.selected">
+<option v-for="option in parts.free1.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free1.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free1.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free2.selected">
+<option v-for="option in parts.free2.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free2.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free2.level" class="iptParts"></dd>
+</dl>
+</li>
+</ul>
+<div class="btns">
+<a href="#" v-on:click="saveParts" class="btnSave">保存</a>
+<span class="saveMessage">{{saveMessage}}</span>
+</div>
 </div>
 <table class="carList">
 <tr>
@@ -52,6 +122,76 @@
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
 <a href="#" class="btnPlus plusStatus{{plus}}" v-on:click="incrementPlus"><span class="firstPlus">+</span><span class="secondPlus">+</span></a>
+<a href="#" class="btnParts" v-on:click="toggleParts">パーツ</a>
+</div>
+<div class="parts clearfix close" id="fourStarsParts">
+<ul>
+<li>
+<dl class="clearfix">
+<dt>愛車レベル</dt>
+<dd>レベル: <input type="tel" v-model="carLevel" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>エンジン</dt>
+<dd>サイズ: <input type="tel" v-model="parts.engine.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.engine.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>トランスミッション</dt>
+<dd>サイズ: <input type="tel" v-model="parts.transmission.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.transmission.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>タイヤ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.tire.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.tire.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ニトロ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.nitro.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.nitro.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ECU</dt>
+<dd>サイズ: <input type="tel" v-model="parts.ecu.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.ecu.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free1.selected">
+<option v-for="option in parts.free1.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free1.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free1.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free2.selected">
+<option v-for="option in parts.free2.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free2.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free2.level" class="iptParts"></dd>
+</dl>
+</li>
+</ul>
+<div class="btns">
+<a href="#" v-on:click="saveParts" class="btnSave">保存</a>
+<span class="saveMessage">{{saveMessage}}</span>
+</div>
 </div>
 <table class="carList">
 <tr>
@@ -81,6 +221,76 @@
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
 <a href="#" class="btnPlus plusStatus{{plus}}" v-on:click="incrementPlus"><span class="firstPlus">+</span><span class="secondPlus">+</span></a>
+<a href="#" class="btnParts" v-on:click="toggleParts">パーツ</a>
+</div>
+<div class="parts clearfix close" id="fiveStarsParts">
+<ul>
+<li>
+<dl class="clearfix">
+<dt>愛車レベル</dt>
+<dd>レベル: <input type="tel" v-model="carLevel" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>エンジン</dt>
+<dd>サイズ: <input type="tel" v-model="parts.engine.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.engine.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>トランスミッション</dt>
+<dd>サイズ: <input type="tel" v-model="parts.transmission.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.transmission.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>タイヤ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.tire.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.tire.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ニトロ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.nitro.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.nitro.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ECU</dt>
+<dd>サイズ: <input type="tel" v-model="parts.ecu.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.ecu.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free1.selected">
+<option v-for="option in parts.free1.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free1.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free1.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free2.selected">
+<option v-for="option in parts.free2.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free2.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free2.level" class="iptParts"></dd>
+</dl>
+</li>
+</ul>
+<div class="btns">
+<a href="#" v-on:click="saveParts" class="btnSave">保存</a>
+<span class="saveMessage">{{saveMessage}}</span>
+</div>
 </div>
 <table class="carList">
 <tr>
@@ -110,6 +320,76 @@
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
 <a href="#" class="btnPlus plusStatus{{plus}}" v-on:click="incrementPlus"><span class="firstPlus">+</span><span class="secondPlus">+</span></a>
+<a href="#" class="btnParts" v-on:click="toggleParts">パーツ</a>
+</div>
+<div class="parts clearfix close" id="sixStarsParts">
+<ul>
+<li>
+<dl class="clearfix">
+<dt>愛車レベル</dt>
+<dd>レベル: <input type="tel" v-model="carLevel" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>エンジン</dt>
+<dd>サイズ: <input type="tel" v-model="parts.engine.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.engine.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>トランスミッション</dt>
+<dd>サイズ: <input type="tel" v-model="parts.transmission.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.transmission.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>タイヤ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.tire.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.tire.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ニトロ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.nitro.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.nitro.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ECU</dt>
+<dd>サイズ: <input type="tel" v-model="parts.ecu.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.ecu.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free1.selected">
+<option v-for="option in parts.free1.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free1.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free1.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd>種類: <select v-model="parts.free2.selected">
+<option v-for="option in parts.free2.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free2.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free2.level" class="iptParts"></dd>
+</dl>
+</li>
+</ul>
+<div class="btns">
+<a href="#" v-on:click="saveParts" class="btnSave">保存</a>
+<span class="saveMessage">{{saveMessage}}</span>
+</div>
 </div>
 <table class="carList">
 <tr>

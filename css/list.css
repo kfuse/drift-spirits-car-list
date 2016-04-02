@@ -4,6 +4,13 @@ body {
     color: #333;
     font-family: sans-serif;
 }
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
 #wrapper {
     max-width: 950px;
     margin: 0 auto;
@@ -13,6 +20,11 @@ body {
 }
 .text {
     font-size: 14px;
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
 }
 .mainTitle {
     margin: 0 0 20px;
@@ -118,6 +130,66 @@ body {
 .plusStatus2 .secondPlus {
     background: #5bff54;
     color: #333;
+}
+.close {
+    display: none;
+}
+.btnParts {
+    float: right;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+.btnParts:after {
+    content: "▼";
+    font-size: 8px;
+    padding-left: 4px;
+    color: #999;
+}
+.iconOpened:after {
+    content: "▲";
+}
+.btnSave {
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+.saveMessage {
+    margin-left: 10px;
+    font-size: 12px;
+}
+.parts {
+    padding: 10px;
+    background: #f5f5f5;
+    font-size: 14px;
+}
+.parts dl {
+    margin: 0;
+    padding: 0 0 10px;
+}
+.parts dt {
+    float: left;
+    width: 150px;
+    margin:  0 20px 0 0;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+.parts dd {
+    float: left;
+    margin: 0 10px;
+}
+.parts .btns {
+    clear: left;
+}
+.iptParts {
+    width: 40px;
 }
 .carList {
     width: 100%;
