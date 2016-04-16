@@ -15,11 +15,50 @@ var Util = {
             var eo = e || window.event;
             if (eo.preventDefault) {
                 eo.preventDefault();
-            } else { 
+            } else {
                 eo.returnValue = false;
+            }
+        },
+        stopPropagation: function (e) {
+            var eo = e || window.event;
+            if (eo.stopPropagation) {
+                eo.stopPropagation();
+            } else { 
+                eo.cancelBubble = false;
+            }
+        },
+        getElementsByClassName: function (el, searchClass, tag) {
+            if (el) {
+                var returnArr = [], els, pattern, i;
+                if (typeof document.getElementsByClassName === "function") {
+                    returnArr = el.getElementsByClassName(searchClass, tag);
+                } else { 
+                    tag = tag || '*';
+                    els = el.getElementsByTagName(tag);
+                    pattern = new RegExp('(^|\\s)' + searchClass + '(\\s|$)');
+                    for (i = 0; i < els.length; i = i + 1) {
+                        if (pattern.test(els[i].className)) {
+                            returnArr.push(els[i]);
+                        }
+                    }
+                }
+                return returnArr;
+            }
+        },
+        addClass: function (el, className) {
+            if (el) {
+                if (!el.className.match(className)) {
+                    el.className += ' ' + className;
+                }
+            }
+        },
+        removeClass: function (el, className) {
+            if (el) {
+                el.className = el.className.replace(className, '').replace(/^\s+|\s+$/g, "");
             }
         }
     },
+    i = 0,
     threeStars = new Vue({
     el: "#threeStars",
     data: {
@@ -723,5 +762,56 @@ function resetParts(cars, originalCars) {
         cars[i].power = originalCars[i].power;
     }
 }
+
+for (i = 0; i < Util.getElementsByClassName(document.getElementById("content"), "carList", "div").length; i++) {
+    Util.addListener(Util.getElementsByClassName(document.getElementById("content"), "carList", "div")[i], "click", carListClick);
+}
+// 車種一覧テーブルをクリックした時のハンドラー
+function carListClick(e) {
+    var ev = e || event,
+        target = ev.target || ev.srcElement,
+        parentTr,
+        selectedCars = 0;
+    if (target.tagName === "TD") {
+        parentTr = target.parentNode;
+    } else if (target.tagName === "SPAN") {
+        parentTr = target.parentNode.parentNode;
+    } else {
+        return;
+    }
+    if (parentTr.className.match(/selected/)) {
+        parentTr.className = parentTr.className.replace(/selected/, "");
+    } else {
+        parentTr.className += " selected";
+    }
+    selectedCars = Util.getElementsByClassName(document.getElementById("content"), "selected", "tr").length;
+    // 2個以上選択でメニューを表示
+    if (selectedCars === 1) {
+        Util.removeClass(document.getElementById("footerMenu"), "open");
+    } else if (selectedCars >= 2 && !document.getElementById("footerMenu").className.match(/open/)) {
+        Util.addClass(document.getElementById("footerMenu"), "open");
+    }
+}
+// 比較するボタン
+Util.addListener(document.getElementById("btnCompare"), "click", function(e) {
+    var trs = Util.getElementsByClassName(document.getElementById("content"), "selected", "tr"),
+        carList = "",
+        i = 0,
+        modalTemplate = document.getElementById("modalTemplate").innerHTML;
+    Util.preventDefault(e);
+    for (i = 0; i < trs.length; i++) {
+        carList += trs[i].outerHTML;
+    }
+    document.getElementById("compareDialog").innerHTML = modalTemplate.replace("{{carList}}", carList);
+    document.getElementById("modal").style.display = "block";
+    // 背景をクリックでダイアログを閉じる
+    Util.addListener(document.getElementById("modal"), "click", function(e) {
+        document.getElementById("modal").style.display = "none";
+        document.getElementById("compareDialog").innerHTML = "";
+    });
+    Util.addListener(Util.getElementsByClassName(document.getElementById("modal"), "modalBox", "div")[0], "click", function(e) {
+        Util.stopPropagation(e);
+    });
+});
 
 })();

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
 <title>ドリフトスピリッツ 車種一覧</title>
-<meta name="keywords" content="ドリフトスピリッツの車種一覧です。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。BMW M5追加しました。">
+<meta name="description" content="ドリフトスピリッツの車種一覧です。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。BMW M5追加しました。">
 <meta name="fragment" content="!">
 <link rel="stylesheet" href="css/list.css" media="all">
 </head>
@@ -412,8 +412,35 @@
 </table>
 </div>
 
+
+<div id="compareDialog"></div>
+
 </div>
 </div>
+
+<div id="footerMenu">
+<a href="#" id="btnCompare">比較する</a>
+</div>
+
+<script type="text/x-template" id="modalTemplate">
+<div id="modal">
+<div class="modalBox">
+<table class="carList">
+<tr>
+<th>車名</th>
+<th>戦闘力</th>
+<th>高速</th>
+<th>加速</th>
+<th>ハンドリング</th>
+<th>ニトロ</th>
+<th>燃費</th>
+</tr>
+{{carList}}
+</table>
+</div>
+<div class="modalBg"></div>
+</div>
+</script>
 
 <script>
 var threeStarsCars = [
