@@ -809,6 +809,11 @@ Util.addListener(document.getElementById("btnCompare"), "click", function(e) {
         document.getElementById("modal").style.display = "none";
         document.getElementById("compareDialog").innerHTML = "";
     });
+    Util.addListener(Util.getElementsByClassName(document.getElementById("modal"), "btnClose", "div")[0], "click", function(e) {
+        Util.preventDefault(e);
+        document.getElementById("modal").style.display = "none";
+        document.getElementById("compareDialog").innerHTML = "";
+    });
     Util.addListener(Util.getElementsByClassName(document.getElementById("modal"), "modalBox", "div")[0], "click", function(e) {
         Util.stopPropagation(e);
     });

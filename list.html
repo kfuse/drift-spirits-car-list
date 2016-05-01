@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
 <title>ドリフトスピリッツ 車種一覧</title>
-<meta name="description" content="ドリフトスピリッツの車種一覧です。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。BMW M5追加しました。">
+<meta name="description" content="ドリフトスピリッツの車種一覧です。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。BMW M5, VIPER, Lancer Evolution FINAL EDITIONを追加しました。">
 <meta name="fragment" content="!">
 <link rel="stylesheet" href="css/list.css" media="all">
 </head>
@@ -419,12 +419,16 @@
 </div>
 
 <div id="footerMenu">
+<div class="container">
 <a href="#" id="btnCompare">比較する</a>
+</div>
 </div>
 
 <script type="text/x-template" id="modalTemplate">
 <div id="modal">
 <div class="modalBox">
+<a href="#" class="btnClose">x</a>
+<h3 class="titleCompare">比較</h3>
 <table class="carList">
 <tr>
 <th>車名</th>
@@ -455,6 +459,7 @@ var threeStarsCars = [
         {name:"TOYOTA 86 ZN6",power:424,speed:2147,acceleration:547,handling:2247,nitro:3547,efficiency:300},
         {name:"SUBARU BRZ ZC6",power:424,speed:2147,acceleration:547,handling:2247,nitro:3547,efficiency:300},
         {name:"FTO DE3A",power:421,speed:2147,acceleration:547,handling:2197,nitro:3547,efficiency:310},
+        {name:"FAIRLADY Z S30-爆高-",power:421,speed:2296,acceleration:446,handling:2196,nitro:3496,efficiency:350},
         {name:"180SX RPS13",power:420,speed:2151,acceleration:501,handling:2201,nitro:3551,efficiency:315},
         {name:"CooperS F56",power:420,speed:2129,acceleration:429,handling:2229,nitro:3629,efficiency:280},
         {name:"CELICA XX 2800GT MA61",power:420,speed:2126,acceleration:526,handling:2126,nitro:3626,efficiency:325},
@@ -527,6 +532,7 @@ var threeStarsCars = [
         {name:"CTR",power:504,speed:2525,acceleration:1005,handling:2655,nitro:3905,efficiency:500},
         {name:"TOPTUL M7 NATS 86",power:503,speed:2379,acceleration:1000,handling:2902,nitro:3789,efficiency:450},
         {name:"RE雨宮 GruppeM-RX7",power:502,speed:2459,acceleration:900,handling:2677,nitro:4011,efficiency:510},
+        {name:"LANCER Evolution FINAL EDITION",power:499,speed:2438,acceleration:801,handling:2733,nitro:4021,efficiency:470},
         {name:"FD3S 頭文字D Ver.",power:499,speed:2426,acceleration:826,handling:2576,nitro:4156,efficiency:540},
         {name:"NSX TYPE-R NA2",power:498,speed:2406,acceleration:856,handling:2706,nitro:4006,efficiency:495},
         {name:"IMPREZA WRX STI GRB",power:497,speed:2427,acceleration:827,handling:2677,nitro:4027,efficiency:475},
