@@ -188,6 +188,19 @@ li {
 .parts .btns {
     clear: left;
 }
+@media screen and (max-width: 500px) {
+    .parts dt {
+        float: none;
+        padding-left: 5px;
+        border-left: 2px solid #ccc;
+        border-right: none;
+    }
+    .parts dd {
+    }
+    .parts dd.freeType {
+        float: none;
+    }
+}
 .iptParts {
     width: 40px;
 }
