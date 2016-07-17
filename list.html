@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
 <title>ドリフトスピリッツ 車種一覧</title>
-<meta name="description" content="ドリフトスピリッツの車種一覧です。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。Miura, SPORTS800, Gallardoを追加しました。">
+<meta name="description" content="ドリフトスピリッツの車種一覧です。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。S800, ハコスカ, SUBARU360, Miura, SPORTS800, Gallardoを追加しました。">
 <meta name="fragment" content="!">
 <link rel="stylesheet" href="css/list.css" media="all">
 </head>
@@ -450,12 +450,14 @@
 var threeStarsCars = [
         {name:"ROADSTER RS NCEC-爆加-",power:445,speed:2125,acceleration:1040,handling:2225,nitro:3525,efficiency:325},
         {name:"DART GT",power:443,speed:2135,acceleration:745,handling:2245,nitro:3745,efficiency:315},
+        {name:"FAIRLADY Z S30 -Version 735-",power:438,speed:2165,acceleration:786,handling:2795,nitro:3030,efficiency:325},
         {name:"MAZDASPEED ATENZA GG3P",power:435,speed:2200,acceleration:600,handling:2200,nitro:3700,efficiency:315},
         {name:"INTEGRA TYPE-R DC5",power:432,speed:2162,acceleration:462,handling:2462,nitro:3562,efficiency:300},
         {name:"MR2 GT-S SW20",power:431,speed:2180,acceleration:580,handling:2280,nitro:3580,efficiency:320},
         {name:"LEVIN SR AE85 [SPEED STARS]",power:431,speed:2196,acceleration:546,handling:2296,nitro:3596,efficiency:310},
         {name:"CIVIC TYPE-R EK-9",power:429,speed:2136,acceleration:436,handling:2386,nitro:3636,efficiency:290},
         {name:"LEGACY B4 BM9",power:429,speed:2210,acceleration:560,handling:2210,nitro:3610,efficiency:315},
+        {name:"ColtGalant GTO-MR A53C",power:429,speed:2121,acceleration:721,handling:2031,nitro:3721,efficiency:300},
         {name:"TOYOTA 86 ZN6",power:424,speed:2147,acceleration:547,handling:2247,nitro:3547,efficiency:300},
         {name:"SUBARU BRZ ZC6",power:424,speed:2147,acceleration:547,handling:2247,nitro:3547,efficiency:300},
         {name:"SYNCi \"PAC-MAN\" SP",power:422,speed:2156,acceleration:836,handling:2156,nitro:3306,efficiency:310},
@@ -468,7 +470,8 @@ var threeStarsCars = [
         {name:"CR-Z ZF2",power:419,speed:2088,acceleration:618,handling:2088,nitro:3588,efficiency:265},
         {name:"SPRINTER TRUENO AE86",power:416,speed:2096,acceleration:546,handling:2196,nitro:3496,efficiency:305},
         {name:"SPRINTER TRUENO AE86-爆エコ-",power:411,speed:2076,acceleration:526,handling:2196,nitro:3426,efficiency:285},
-        {name:"FAIRLADY Z S30",power:411,speed:2096,acceleration:446,handling:2196,nitro:3496,efficiency:340}
+        {name:"FAIRLADY Z S30",power:411,speed:2096,acceleration:446,handling:2196,nitro:3496,efficiency:340},
+        {name:"SUBARU360 K111",power:398,speed:1921,acceleration:421,handling:2211,nitro:3421,efficiency:280}
     ],
     fourStarsCars = [
         /*
@@ -476,6 +479,7 @@ var threeStarsCars = [
         {name:"SUNOCO/Diversion/Dixcel SILVIA",power:483,speed:2404,acceleration:754,handling:2604,nitro:3904,efficiency:435},
         {name:"HKS Racing Performer 86",power:480,speed:2366,acceleration:766,handling:2716,nitro:3766,efficiency:420},
         */
+        {name:"BRZ \"Greyhound\"",power:488,speed:2832,acceleration:980,handling:2832,nitro:3127,efficiency:410},
         {name:"LANCER Evolution IX \"BlackSwan\"",power:488,speed:2505,acceleration:1123,handling:2505,nitro:3643,efficiency:410},
         {name:"SKYLINE GT-R BNR34 \"赤蜻蛉\"",power:487,speed:2456,acceleration:806,handling:2556,nitro:3936,efficiency:400},
         {name:"ROADSTER \"飛燕\"",power:484,speed:2307,acceleration:960,handling:2671,nitro:3752,efficiency:395},
@@ -505,6 +509,7 @@ var threeStarsCars = [
         {name:"CHASER JZX100 -爆加-",power:466,speed:2306,acceleration:956,handling:2406,nitro:3656,efficiency:405},
         {name:"ARISTO V300 JZS161",power:466,speed:2305,acceleration:1005,handling:2005,nitro:4005,efficiency:400},
         {name:"AE86 頭文字D-夢現- Ver.",power:465,speed:2222,acceleration:716,handling:2723,nitro:3652,efficiency:375},
+        {name:"TOYOTA 86 ZN6 -爆ハン-",power:464,speed:2247,acceleration:647,handling:2747,nitro:3647,efficiency:390},
         {name:"LANCER EvolutionIII CE9A",power:464,speed:2299,acceleration:699,handling:2399,nitro:3899,efficiency:400},
         {name:"GTO Z16A",power:463,speed:2306,acceleration:656,handling:2306,nitro:4006,efficiency:420},
         {name:"IMPREZA WRX STi VersionVI GC8",power:463,speed:2306,acceleration:656,handling:2406,nitro:3906,efficiency:400},
@@ -518,6 +523,8 @@ var threeStarsCars = [
         {name:"CHASER JZX100",power:456,speed:2306,acceleration:656,handling:2406,nitro:3756,efficiency:405},
         {name:"CORVETTE C3",power:454,speed:2324,acceleration:724,handling:2124,nitro:3924,efficiency:435},
         {name:"CROWN ATHLETE GRS204",power:451,speed:2332,acceleration:732,handling:2132,nitro:3832,efficiency:405},
+        {name:"SKYLINE 2000GT-R KPGC10",power:450,speed:2317,acceleration:767,handling:2217,nitro:3717,efficiency:365},
+        {name:"S800",power:448,speed:2105,acceleration:855,handling:2355,nitro:3655,efficiency:360},
         {name:"ALCYONE SVX CXD",power:442,speed:2277,acceleration:627,handling:2177,nitro:3777,efficiency:420},
         {name:"SPORTS800 UP15",power:430,speed:2153,acceleration:653,handling:2153,nitro:3653,efficiency:345}
     ],
@@ -536,6 +543,7 @@ var threeStarsCars = [
         {name:"VIPER SRT10",power:513,speed:2604,acceleration:1254,handling:2504,nitro:3904,efficiency:530},
         {name:"S2000 AP1 \"雀蜂\"",power:510,speed:2614,acceleration:754,handling:2814,nitro:4034,efficiency:485},
         {name:"NSX NA1 北条豪Ver.",power:508,speed:2661,acceleration:938,handling:2743,nitro:3828,efficiency:500},
+        {name:"FAIRLADY Z NISMO Z34",power:506,speed:2617,acceleration:897,handling:2617,nitro:4001,efficiency:490},
         {name:"CTR",power:504,speed:2525,acceleration:1005,handling:2655,nitro:3905,efficiency:500},
         {name:"TOPTUL M7 NATS 86",power:503,speed:2379,acceleration:1000,handling:2902,nitro:3789,efficiency:450},
         {name:"RE雨宮 GruppeM-RX7",power:502,speed:2459,acceleration:900,handling:2677,nitro:4011,efficiency:510},
@@ -545,6 +553,7 @@ var threeStarsCars = [
         {name:"NSX TYPE-R NA2",power:498,speed:2406,acceleration:856,handling:2706,nitro:4006,efficiency:495},
         {name:"IMPREZA WRX STI GRB",power:497,speed:2427,acceleration:827,handling:2677,nitro:4027,efficiency:475},
         {name:"LANCER EvolutionX CZ4A",power:497,speed:2421,acceleration:771,handling:2721,nitro:4041,efficiency:480},
+        {name:"RX-8 SE3P -爆ハン-",power:497,speed:2386,acceleration:786,handling:2886,nitro:3886,efficiency:505},
         {name:"LANCER EvolutionIX MR CT9A",power:496,speed:2406,acceleration:906,handling:2606,nitro:4006,efficiency:480},
         {name:"FC3S 頭文字D Ver.",power:495,speed:2391,acceleration:891,handling:2691,nitro:3941,efficiency:540},
         {name:"FC3S 頭文字D-夢現-Ver.",power:493,speed:2490,acceleration:842,handling:2711,nitro:3833,efficiency:460},
