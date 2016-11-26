@@ -412,6 +412,104 @@
 </table>
 </div>
 
+<div id="sevenStars">
+<h3 class="titleStar">初期レアリティ☆☆☆☆☆☆ (星7)</h3>
+<div class="carListTool">
+<span class="labelStatus">ステータス:</span>
+<a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
+<a href="#" class="btnParts" v-on:click="toggleParts">パーツ</a>
+</div>
+<div class="parts clearfix close" id="sevenStarsParts">
+<ul>
+<li>
+<dl class="clearfix">
+<dt>愛車レベル</dt>
+<dd>レベル: <input type="tel" v-model="carLevel" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>エンジン</dt>
+<dd>サイズ: <input type="tel" v-model="parts.engine.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.engine.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>トランスミッション</dt>
+<dd>サイズ: <input type="tel" v-model="parts.transmission.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.transmission.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>タイヤ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.tire.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.tire.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ニトロ</dt>
+<dd>サイズ: <input type="tel" v-model="parts.nitro.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.nitro.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>ECU</dt>
+<dd>サイズ: <input type="tel" v-model="parts.ecu.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.ecu.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd class="freeType">種類: <select v-model="parts.free1.selected">
+<option v-for="option in parts.free1.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free1.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free1.level" class="iptParts"></dd>
+</dl>
+</li>
+<li>
+<dl class="clearfix">
+<dt>フリー</dt>
+<dd class="freeType">種類: <select v-model="parts.free2.selected">
+<option v-for="option in parts.free2.type" v-bind:value="option.value">{{option.text}}</option>
+</select></dd>
+<dd>サイズ: <input type="tel" v-model="parts.free2.size" class="iptParts"></dd>
+<dd>レベル: <input type="tel" v-model="parts.free2.level" class="iptParts"></dd>
+</dl>
+</li>
+</ul>
+<div class="btns">
+<a href="#" v-on:click="saveParts" class="btnSave">保存</a>
+<span class="saveMessage">{{saveMessage}}</span>
+</div>
+</div>
+<table class="carList">
+<tr>
+<th>車名</th>
+<th>戦闘力</th>
+<th>高速</th>
+<th>加速</th>
+<th>ハンドリング</th>
+<th>ニトロ</th>
+<th>燃費</th>
+</tr>
+<tr v-for="car in cars">
+<td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
+<td>{{car.power}}</td>
+<td>{{car.speed}}</td>
+<td>{{car.acceleration}}</td>
+<td>{{car.handling}}</td>
+<td>{{car.nitro}}</td>
+<td>{{car.efficiency}}</td>
+</tr>
+</table>
+</div>
+
 <div id="footer">
 <p>お問い合わせ: <a href="https://twitter.com/drsp_tarooo">@drsp_tarooo</a>
 </div>
@@ -611,6 +709,9 @@ var threeStarsCars = [
         {name:"Gallardo LP560-4",power:560,speed:3001,acceleration:1256,handling:2752,nitro:4198,efficiency:600},
         {name:"GT-R R35",power:558,speed:2705,acceleration:1055,handling:3005,nitro:4405,efficiency:595},
         {name:"FAIRLADY Z S30 \"悪魔のZ\"[北見チューン]",power:553,speed:2727,acceleration:1277,handling:2707,nitro:4367,efficiency:620}
+    ],
+    sevenStarsCars = [
+        {name:"NISSAN GT-R (R35) MY17",power:649,speed:3200,acceleration:1526,handling:3535,nitro:4730,efficiency:750}
     ];
 </script>
 <script src="js/vue.min.js"></script>

@@ -621,6 +621,134 @@ var Util = {
             });
         }
     }
+}),
+    sevenStars = new Vue({
+    el: "#sevenStars",
+    data: {
+        stars: 7,
+        id: "sevenStars",
+        plus: 0,
+        cars: sevenStarsCars,
+        originalCars: JSON.parse(JSON.stringify(sevenStarsCars)),
+        carLevel: 1,
+        parts: {
+            engine: {
+                size: 1,
+                level: 1
+            },
+            transmission: {
+                size: 1,
+                level: 1
+            },
+            tire: {
+                size: 1,
+                level: 1
+            },
+            nitro: {
+                size: 1,
+                level: 1
+            },
+            ecu: {
+                size: 1,
+                level: 1
+            },
+            free1: {
+                selected: "towerbar",
+                type: [
+                    {text:"", value:""},
+                    {text:"タワーバー", value:"towerbar"},
+                    {text:"サスペンション", value:"suspension"},
+                    {text:"クラッチ", value:"clutch"},
+                    {text:"シャフト", value:"shaft"},
+                    {text:"マフラー", value:"muffler"},
+                    {text:"タービン", value:"turbine"}
+                ],
+                size: 1,
+                level: 1
+            },
+            free2: {
+                selected: "towerbar",
+                type: [
+                    {text:"", value:""},
+                    {text:"タワーバー", value:"towerbar"},
+                    {text:"サスペンション", value:"suspension"},
+                    {text:"クラッチ", value:"clutch"},
+                    {text:"シャフト", value:"shaft"},
+                    {text:"マフラー", value:"muffler"},
+                    {text:"タービン", value:"turbine"}
+                ],
+                size: 1,
+                level: 1
+            }
+        },
+        isAppliedParts: false,
+        saveMessage: ""
+    },
+    methods: {
+        incrementStar: function(e) {
+            Util.preventDefault(e);
+        },
+        incrementPlus: function(e) {
+            Util.preventDefault(e);
+            this.plus++;
+            if (this.plus == 3) {
+                this.plus = 0;
+            }
+            updatePlusStatus(this.originalCars, this.plus);
+            this.cars = JSON.parse(JSON.stringify(this.originalCars));
+            if (this.isAppliedParts) {
+                updateParts({
+                    cars: this.cars,
+                    originalCars: this.originalCars,
+                    carLevel: this.carLevel,
+                    parts: this.parts,
+                    mode: "set"
+                });
+            }
+        },
+        toggleParts: function(e) {
+            Util.preventDefault(e);
+            var partsContainer = document.getElementById(this.id + "Parts");
+            if (partsContainer.className.match(/close/)) {
+                partsContainer.className = partsContainer.className.replace(/close/g, "");
+                e.target.className += " iconOpened";
+                this.isAppliedParts = true;
+                if (localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel") !== null) {
+                    this.carLevel = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel"));
+                    this.parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+                }
+                updateParts({
+                    cars: this.cars,
+                    originalCars: this.originalCars,
+                    carLevel: this.carLevel,
+                    parts: this.parts,
+                    mode: "set"
+                });
+            } else {
+                partsContainer.className += " close";
+                e.target.className = e.target.className.replace(/iconOpened/g, "");
+                this.isAppliedParts = false;
+                resetParts(this.cars, this.originalCars);
+            }
+        },
+        saveParts: function(e) {
+            var thisObj = this;
+            Util.preventDefault(e);
+            localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.carLevel", JSON.stringify(this.carLevel));
+            localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.parts", JSON.stringify(this.parts));
+            this.saveMessage = "保存しました。";
+            setTimeout(function() {
+                thisObj.saveMessage = "";
+            }, 2000);
+            updateParts({
+                cars: this.cars,
+                originalCars: this.originalCars,
+                carLevel: this.carLevel,
+                parts: this.parts,
+                mode: "set"
+            });
+        }
+    }
 });
 
 function updateStarStatus(cars, star, reset) {
