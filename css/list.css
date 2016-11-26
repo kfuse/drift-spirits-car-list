@@ -96,6 +96,11 @@ a {
     color: #f9dc3b;
     line-height: 1.9;
 }
+.starStatus7:after {
+    content: "★★★★★★★";
+    color: #f9dc3b;
+    line-height: 1.9;
+}
 .btnPlus {
     display: block;
     float: left;
