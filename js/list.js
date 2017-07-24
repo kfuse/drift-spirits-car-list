@@ -190,7 +190,7 @@ var Util = {
             Util.preventDefault(e);
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.carLevel", JSON.stringify(this.carLevel));
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.parts", JSON.stringify(this.parts));
-            this.saveMessage = "保存しました。";
+            this.saveMessage = "反映しました。";
             setTimeout(function() {
                 thisObj.saveMessage = "";
             }, 2000);
@@ -335,7 +335,7 @@ var Util = {
             Util.preventDefault(e);
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.carLevel", JSON.stringify(this.carLevel));
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.parts", JSON.stringify(this.parts));
-            this.saveMessage = "保存しました。";
+            this.saveMessage = "反映しました。";
             setTimeout(function() {
                 thisObj.saveMessage = "";
             }, 2000);
@@ -480,7 +480,7 @@ var Util = {
             Util.preventDefault(e);
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.carLevel", JSON.stringify(this.carLevel));
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.parts", JSON.stringify(this.parts));
-            this.saveMessage = "保存しました。";
+            this.saveMessage = "反映しました。";
             setTimeout(function() {
                 thisObj.saveMessage = "";
             }, 2000);
@@ -608,7 +608,7 @@ var Util = {
             Util.preventDefault(e);
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.carLevel", JSON.stringify(this.carLevel));
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.parts", JSON.stringify(this.parts));
-            this.saveMessage = "保存しました。";
+            this.saveMessage = "反映しました。";
             setTimeout(function() {
                 thisObj.saveMessage = "";
             }, 2000);
@@ -736,7 +736,7 @@ var Util = {
             Util.preventDefault(e);
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.carLevel", JSON.stringify(this.carLevel));
             localStorage.setItem("content.driftspirits.car.list." + this.stars + "stars.parts", JSON.stringify(this.parts));
-            this.saveMessage = "保存しました。";
+            this.saveMessage = "反映しました。";
             setTimeout(function() {
                 thisObj.saveMessage = "";
             }, 2000);
