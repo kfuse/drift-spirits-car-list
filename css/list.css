@@ -77,28 +77,33 @@ a {
     text-decoration: none;
 }
 .starStatus3:after {
-    content: "★★★☆☆☆";
+    content: "★★★☆☆☆☆";
     color: #f9dc3b;
     line-height: 1.9;
 }
 .starStatus4:after {
-    content: "★★★★☆☆";
+    content: "★★★★☆☆☆";
     color: #f9dc3b;
     line-height: 1.9;
 }
 .starStatus5:after {
-    content: "★★★★★☆";
+    content: "★★★★★☆☆";
     color: #f9dc3b;
     line-height: 1.9;
 }
 .starStatus6:after {
+    content: "★★★★★★☆";
+    color: #f9dc3b;
+    line-height: 1.9;
+}
+.starStatus7:before {
     content: "★★★★★★";
     color: #f9dc3b;
     line-height: 1.9;
 }
 .starStatus7:after {
-    content: "★★★★★★★";
-    color: #f9dc3b;
+    content: "★";
+    color: #bf0e0d;
     line-height: 1.9;
 }
 .btnPlus {
