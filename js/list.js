@@ -67,6 +67,7 @@ var Util = {
         plus: 0,
         cars: threeStarsCars,
         originalCars: JSON.parse(JSON.stringify(threeStarsCars)),
+        originalStars: 3,
         carLevel: 1,
         parts: {
             engine: {
@@ -126,11 +127,11 @@ var Util = {
             var reset = false;
             Util.preventDefault(e);
             this.stars++;
-            if (this.stars === 7) {
-                this.stars = 3;
+            if (this.stars === 8) {
+                this.stars = this.originalStars;
                 reset = true;
             }
-            updateStarStatus(this.originalCars, this.stars, reset);
+            updateStarStatus(this.originalCars, this.stars, {reset:reset, originalStars:this.originalStars});
             this.cars = JSON.parse(JSON.stringify(this.originalCars));
             if (this.isAppliedParts) {
                 updateParts({
@@ -212,6 +213,7 @@ var Util = {
         plus: 0,
         cars: fourStarsCars,
         originalCars: JSON.parse(JSON.stringify(fourStarsCars)),
+        originalStars: 4,
         carLevel: 1,
         parts: {
             engine: {
@@ -271,11 +273,11 @@ var Util = {
             var reset = false;
             Util.preventDefault(e);
             this.stars++;
-            if (this.stars === 7) {
-                this.stars = 4;
+            if (this.stars === 8) {
+                this.stars = this.originalStars;
                 reset = true;
             }
-            updateStarStatus(this.originalCars, this.stars, reset);
+            updateStarStatus(this.originalCars, this.stars, {reset:reset, originalStars:this.originalStars});
             this.cars = JSON.parse(JSON.stringify(this.originalCars));
             if (this.isAppliedParts) {
                 updateParts({
@@ -357,6 +359,7 @@ var Util = {
         plus: 0,
         cars: fiveStarsCars,
         originalCars: JSON.parse(JSON.stringify(fiveStarsCars)),
+        originalStars: 5,
         carLevel: 1,
         parts: {
             engine: {
@@ -416,11 +419,11 @@ var Util = {
             var reset = false;
             Util.preventDefault(e);
             this.stars++;
-            if (this.stars === 7) {
-                this.stars = 5;
+            if (this.stars === 8) {
+                this.stars = this.originalStars;
                 reset = true;
             }
-            updateStarStatus(this.originalCars, this.stars, reset);
+            updateStarStatus(this.originalCars, this.stars, {reset:reset, originalStars:this.originalStars});
             this.cars = JSON.parse(JSON.stringify(this.originalCars));
             if (this.isAppliedParts) {
                 updateParts({
@@ -502,6 +505,7 @@ var Util = {
         plus: 0,
         cars: sixStarsCars,
         originalCars: JSON.parse(JSON.stringify(sixStarsCars)),
+        originalStars: 6,
         carLevel: 1,
         parts: {
             engine: {
@@ -558,7 +562,24 @@ var Util = {
     },
     methods: {
         incrementStar: function(e) {
+            var reset = false;
             Util.preventDefault(e);
+            this.stars++;
+            if (this.stars === 8) {
+                this.stars = this.originalStars;
+                reset = true;
+            }
+            updateStarStatus(this.originalCars, this.stars, {reset:reset, originalStars:this.originalStars});
+            this.cars = JSON.parse(JSON.stringify(this.originalCars));
+            if (this.isAppliedParts) {
+                updateParts({
+                    cars: this.cars,
+                    originalCars: this.originalCars,
+                    carLevel: this.carLevel,
+                    parts: this.parts,
+                    mode: "set"
+                });
+            }
         },
         incrementPlus: function(e) {
             Util.preventDefault(e);
@@ -630,6 +651,7 @@ var Util = {
         plus: 0,
         cars: sevenStarsCars,
         originalCars: JSON.parse(JSON.stringify(sevenStarsCars)),
+        originalStars: 7,
         carLevel: 1,
         parts: {
             engine: {
@@ -751,43 +773,66 @@ var Util = {
     }
 });
 
-function updateStarStatus(cars, star, reset) {
+function updateStarStatus(cars, star, option) {
     var i,
         power,
         specs,
+        reset = option.reset,
+        originalStars = option.originalStars,
+        sevenStarOffset = {},
         efficiency;
+    if (originalStars < 5) {
+        sevenStarOffset.power = 40;
+        sevenStarOffset.specs = 200;
+        sevenStarOffset.efficiency = 135;
+    } else {
+        sevenStarOffset.power = 60;
+        sevenStarOffset.specs = 300;
+        sevenStarOffset.efficiency = 135;
+    }
     switch (star) {
         case 3:
-            power = -80;
-            specs = -400;
-            efficiency = -255;
+            power      = -80  - sevenStarOffset.power;
+            specs      = -400 - sevenStarOffset.specs;
+            efficiency = -255 - sevenStarOffset.efficiency;
             break;
         case 4:
             if (!reset) {
-                power = 20;
-                specs = 100;
+                power      = 20;
+                specs      = 100;
                 efficiency = 75;
             } else {
-                power = -60;
-                specs = -300;
-                efficiency = -180;
+                power      = -60  - sevenStarOffset.power;
+                specs      = -300 - sevenStarOffset.specs;
+                efficiency = -180 - sevenStarOffset.efficiency;
             }
             break;
         case 5:
             if (!reset) {
-                power = 20;
-                specs = 100;
+                power      = 20;
+                specs      = 100;
                 efficiency = 80;
             } else {
-                power = -40;
-                specs = -200;
-                efficiency = -100;
+                power      = -40  - sevenStarOffset.power;
+                specs      = -200 - sevenStarOffset.specs;
+                efficiency = -100 - sevenStarOffset.efficiency;
             }
             break;
         case 6:
-            power = 40;
-            specs = 200;
-            efficiency = 100;
+            if (!reset) {
+                power = 40;
+                specs = 200;
+                efficiency = 100;
+            } else {
+                power      = -sevenStarOffset.power;
+                specs      = -sevenStarOffset.specs;
+                efficiency = -sevenStarOffset.efficiency;
+            }
+            break;
+        case 7:
+            power      = sevenStarOffset.power;
+            specs      = sevenStarOffset.specs;
+            efficiency = sevenStarOffset.efficiency;
             break;
     }
     for (i = 0; i < cars.length; i++) {
