@@ -903,6 +903,10 @@ function updateParts(param) {
         rotationIndex = (i - 1) % 5;
         if (rotationIndex === 4) {
             specs[carLevelRotation[rotationIndex]] += 1;
+            if (i === 95) {
+                //レベル96なら燃費2改善
+                specs[carLevelRotation[rotationIndex]] += 1;
+            }
         } else {
             specs[carLevelRotation[rotationIndex]] += 5;
         }
