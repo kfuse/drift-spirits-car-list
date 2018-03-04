@@ -45,6 +45,24 @@ var Util = {
                 return returnArr;
             }
         },
+        hasClass: function (elem, value) {
+            if (typeof value !== "string") {
+                return false;
+            }
+            var obj = (typeof elem === "string") ? _d.getElementById(elem) : elem,
+                myClassList,
+                i,
+                len;
+            if (obj) {
+                myClassList = obj.className.split(" ");
+                for (i = 0, len = myClassList.length; i < len; i = i + 1) {
+                    if (myClassList[i] == value) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        },
         addClass: function (el, className) {
             if (el) {
                 if (!el.className.match(className)) {
@@ -58,6 +76,7 @@ var Util = {
             }
         }
     },
+    setting = {},
     i = 0,
     threeStars = new Vue({
     el: "#threeStars",
@@ -69,6 +88,8 @@ var Util = {
         originalCars: JSON.parse(JSON.stringify(threeStarsCars)),
         originalStars: 3,
         carLevel: 1,
+        shownNitroless: false,
+        shownPerformance: false,
         parts: {
             engine: {
                 size: 1,
@@ -202,6 +223,10 @@ var Util = {
                 parts: this.parts,
                 mode: "set"
             });
+        },
+        refreshViewSetting: function(setting) {
+            this.shownNitroless = setting.shownNitroless;
+            this.shownPerformance = setting.shownPerformance;
         }
     }
 }),
@@ -215,6 +240,8 @@ var Util = {
         originalCars: JSON.parse(JSON.stringify(fourStarsCars)),
         originalStars: 4,
         carLevel: 1,
+        shownNitroless: false,
+        shownPerformance: false,
         parts: {
             engine: {
                 size: 1,
@@ -348,6 +375,10 @@ var Util = {
                 parts: this.parts,
                 mode: "set"
             });
+        },
+        refreshViewSetting: function(setting) {
+            this.shownNitroless = setting.shownNitroless;
+            this.shownPerformance = setting.shownPerformance;
         }
     }
 }),
@@ -361,6 +392,8 @@ var Util = {
         originalCars: JSON.parse(JSON.stringify(fiveStarsCars)),
         originalStars: 5,
         carLevel: 1,
+        shownNitroless: false,
+        shownPerformance: false,
         parts: {
             engine: {
                 size: 1,
@@ -494,6 +527,10 @@ var Util = {
                 parts: this.parts,
                 mode: "set"
             });
+        },
+        refreshViewSetting: function(setting) {
+            this.shownNitroless = setting.shownNitroless;
+            this.shownPerformance = setting.shownPerformance;
         }
     }
 }),
@@ -507,6 +544,8 @@ var Util = {
         originalCars: JSON.parse(JSON.stringify(sixStarsCars)),
         originalStars: 6,
         carLevel: 1,
+        shownNitroless: false,
+        shownPerformance: false,
         parts: {
             engine: {
                 size: 1,
@@ -640,6 +679,10 @@ var Util = {
                 parts: this.parts,
                 mode: "set"
             });
+        },
+        refreshViewSetting: function(setting) {
+            this.shownNitroless = setting.shownNitroless;
+            this.shownPerformance = setting.shownPerformance;
         }
     }
 }),
@@ -653,6 +696,8 @@ var Util = {
         originalCars: JSON.parse(JSON.stringify(sevenStarsCars)),
         originalStars: 7,
         carLevel: 1,
+        shownNitroless: false,
+        shownPerformance: false,
         parts: {
             engine: {
                 size: 1,
@@ -769,6 +814,10 @@ var Util = {
                 parts: this.parts,
                 mode: "set"
             });
+        },
+        refreshViewSetting: function(setting) {
+            this.shownNitroless = setting.shownNitroless;
+            this.shownPerformance = setting.shownPerformance;
         }
     }
 });
@@ -940,9 +989,30 @@ function resetParts(cars, originalCars) {
     }
 }
 
-for (i = 0; i < Util.getElementsByClassName(document.getElementById("content"), "carList", "div").length; i++) {
-    Util.addListener(Util.getElementsByClassName(document.getElementById("content"), "carList", "div")[i], "click", carListClick);
+function init() {
+    var i = 0,
+        key;
+    for (i = 0; i < Util.getElementsByClassName(document.getElementById("content"), "carList", "div").length; i++) {
+        Util.addListener(Util.getElementsByClassName(document.getElementById("content"), "carList", "div")[i], "click", carListClick);
+    }
+    // 表示設定
+    for (i = 0; i < Util.getElementsByClassName(document.getElementById("content"), "btnViewSetting", "a").length; i++) {
+        Util.addListener(Util.getElementsByClassName(document.getElementById("content"), "btnViewSetting", "a")[i], "click", btnViewSettingClick);
+    }
+    if (!JSON.parse(localStorage.getItem("content.driftspirits.car.list.setting"))) {
+        return;
+    } else {
+        setting = JSON.parse(localStorage.getItem("content.driftspirits.car.list.setting"));
+    }
+    for (key in setting) {
+        if (setting[key] === true) {
+            Util.addClass(document.getElementById(key), "on");
+        }
+    }
+    refreshAllViewSetting(setting);
+    setView();
 }
+
 // 車種一覧テーブルをクリックした時のハンドラー
 function carListClick(e) {
     var ev = e || event,
@@ -981,6 +1051,7 @@ Util.addListener(document.getElementById("btnCompare"), "click", function(e) {
     }
     document.getElementById("compareDialog").innerHTML = modalTemplate.replace("{{carList}}", carList);
     document.getElementById("modal").style.display = "block";
+    setView();
     // 背景をクリックでダイアログを閉じる
     Util.addListener(document.getElementById("modal"), "click", function(e) {
         document.getElementById("modal").style.display = "none";
@@ -995,5 +1066,55 @@ Util.addListener(document.getElementById("btnCompare"), "click", function(e) {
         Util.stopPropagation(e);
     });
 });
+// 表示設定ボタン
+function btnViewSettingClick(e) {
+    var ev = e || event,
+        target = ev.target || ev.srcElement;
+    Util.preventDefault(e);
+    if (Util.hasClass(target, "on")) {
+        Util.removeClass(target, "on");
+        setting[target.id] = false;
+        localStorage.setItem("content.driftspirits.car.list.setting", JSON.stringify(setting));
+    } else {
+        Util.addClass(target, "on");
+        setting[target.id] = true;
+        localStorage.setItem("content.driftspirits.car.list.setting", JSON.stringify(setting));
+    }
+    refreshAllViewSetting(setting);
+    setView();
+}
+// 表示設定の反映
+function setView() {
+    var nitroless = Util.getElementsByClassName(document, "nitroless", "*"),
+        performance = Util.getElementsByClassName(document, "performance", "*");
+    if (setting.shownNitroless === true) {
+        for (i = 0; i < nitroless.length; i++) {
+            nitroless[i].style.display = "table-cell";
+        }
+    } else {
+        for (i = 0; i < nitroless.length; i++) {
+            nitroless[i].style.display = "none";
+        }
+    }
+    if (setting.shownPerformance === true) {
+        for (i = 0; i < performance.length; i++) {
+            performance[i].style.display = "table-cell";
+        }
+    } else {
+        for (i = 0; i < performance.length; i++) {
+            performance[i].style.display = "none";
+        }
+    }
+}
+function refreshAllViewSetting(setting) {
+    threeStars.refreshViewSetting(setting);
+    fourStars.refreshViewSetting(setting);
+    fiveStars.refreshViewSetting(setting);
+    sixStars.refreshViewSetting(setting);
+    sevenStars.refreshViewSetting(setting);
+}
+
+// 初期化
+init();
 
 })();

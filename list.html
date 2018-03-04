@@ -18,6 +18,12 @@
 <p class="text">初期レアリティ別に表示しています。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。<br>
 ※星7は解禁/未解禁も含めて計算上の値を表示しています。</p>
 
+<h3 class="titleSetting">表示設定</h3>
+<ul class="viewSetting clearfix">
+<li><a href="#" class="btnViewSetting" id="shownNitroless"><span></span>ニトロ抜き</a></li>
+<li><a href="#" class="btnViewSetting" id="shownPerformance"><span></span>コスパ</a></li>
+</ul>
+
 <div id="threeStars">
 <h3 class="titleStar">初期レアリティ☆☆☆ (星3)</h3>
 <div class="carListTool">
@@ -104,6 +110,8 @@
 <th>ハンドリング</th>
 <th>ニトロ</th>
 <th>燃費</th>
+<th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
+<th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
 <tr v-for="car in cars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
@@ -113,6 +121,8 @@
 <td>{{car.handling}}</td>
 <td>{{car.nitro}}</td>
 <td>{{car.efficiency}}</td>
+<td v-if="shownNitroless" class="nitroless">{{(car.speed + car.acceleration + car.handling) / 20}}</td>
+<td v-if="shownPerformance" class="performance">{{(car.power / car.efficiency).toFixed(2)}}</td>
 </tr>
 </table>
 </div>
@@ -203,6 +213,8 @@
 <th>ハンドリング</th>
 <th>ニトロ</th>
 <th>燃費</th>
+<th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
+<th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
 <tr v-for="car in cars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
@@ -212,6 +224,8 @@
 <td>{{car.handling}}</td>
 <td>{{car.nitro}}</td>
 <td>{{car.efficiency}}</td>
+<td v-if="shownNitroless" class="nitroless">{{(car.speed + car.acceleration + car.handling) / 20}}</td>
+<td v-if="shownPerformance" class="performance">{{(car.power / car.efficiency).toFixed(2)}}</td>
 </tr>
 </table>
 </div>
@@ -302,6 +316,8 @@
 <th>ハンドリング</th>
 <th>ニトロ</th>
 <th>燃費</th>
+<th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
+<th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
 <tr v-for="car in cars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
@@ -311,6 +327,8 @@
 <td>{{car.handling}}</td>
 <td>{{car.nitro}}</td>
 <td>{{car.efficiency}}</td>
+<td v-if="shownNitroless" class="nitroless">{{(car.speed + car.acceleration + car.handling) / 20}}</td>
+<td v-if="shownPerformance" class="performance">{{(car.power / car.efficiency).toFixed(2)}}</td>
 </tr>
 </table>
 </div>
@@ -401,6 +419,8 @@
 <th>ハンドリング</th>
 <th>ニトロ</th>
 <th>燃費</th>
+<th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
+<th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
 <tr v-for="car in cars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
@@ -410,6 +430,8 @@
 <td>{{car.handling}}</td>
 <td>{{car.nitro}}</td>
 <td>{{car.efficiency}}</td>
+<td v-if="shownNitroless" class="nitroless">{{(car.speed + car.acceleration + car.handling) / 20}}</td>
+<td v-if="shownPerformance" class="performance">{{(car.power / car.efficiency).toFixed(2)}}</td>
 </tr>
 </table>
 </div>
@@ -499,6 +521,8 @@
 <th>ハンドリング</th>
 <th>ニトロ</th>
 <th>燃費</th>
+<th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
+<th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
 <tr v-for="car in cars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
@@ -508,6 +532,8 @@
 <td>{{car.handling}}</td>
 <td>{{car.nitro}}</td>
 <td>{{car.efficiency}}</td>
+<td v-if="shownNitroless" class="nitroless">{{(car.speed + car.acceleration + car.handling) / 20}}</td>
+<td v-if="shownPerformance" class="performance">{{(car.power / car.efficiency).toFixed(2)}}</td>
 </tr>
 </table>
 </div>
@@ -542,6 +568,8 @@
 <th>ハンドリング</th>
 <th>ニトロ</th>
 <th>燃費</th>
+<th class="nitroless">ニトロ抜き</th>
+<th class="performance">コスパ</th>
 </tr>
 {{carList}}
 </table>
