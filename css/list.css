@@ -47,6 +47,40 @@ a {
     border-left: 4px solid #5d8596;
     font-size: 16px;
 }
+.titleSetting {
+    padding: 5px;
+    border-left: 4px solid #ccc;
+    font-size: 14px;
+}
+.viewSetting li {
+    float: left;
+    margin-right: 10px;
+}
+.btnViewSetting {
+    display: block;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    font-size: 14px;
+}
+.btnViewSetting.on {
+    border: 1px solid #329e51;
+    background: #329e51;
+    color: #fff;
+}
+.btnViewSetting span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #ccc;
+}
+.btnViewSetting.on span {
+    background: #f9dc3b;
+}
 .carListTool {
     height: 35px;
     margin-bottom: 1px;
@@ -329,6 +363,9 @@ a {
     .labelStatus {
         float: none;
         margin-top: 0;
+    }
+    .modalBox {
+        top: 10%;
     }
 }
 @media screen and (max-width: 412px) {
