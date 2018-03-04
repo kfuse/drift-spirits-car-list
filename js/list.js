@@ -1,4 +1,4 @@
-// (function(){
+(function(){
 var Util = {
         addListener: function(oElm, sType, func, cap) {
             if (!oElm) { return false; }
@@ -1117,4 +1117,4 @@ function refreshAllViewSetting(setting) {
 // 初期化
 init();
 
-// })();
+})();
