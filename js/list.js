@@ -1085,8 +1085,9 @@ function btnViewSettingClick(e) {
 }
 // 表示設定の反映
 function setView() {
-    var nitroless = Util.getElementsByClassName(document, "nitroless", "*"),
-        performance = Util.getElementsByClassName(document, "performance", "*");
+    var modal = document.getElementById("compareDialog"),
+        nitroless = Util.getElementsByClassName(modal, "nitroless", "*"),
+        performance = Util.getElementsByClassName(modal, "performance", "*");
     if (setting.shownNitroless === true) {
         for (i = 0; i < nitroless.length; i++) {
             nitroless[i].style.display = "table-cell";
