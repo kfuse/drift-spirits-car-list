@@ -890,6 +890,11 @@ function updateStarStatus(cars, star, option) {
         cars[i].acceleration += specs;
         cars[i].handling += specs;
         cars[i].nitro += specs;
+        if (star === 7 && cars[i].xd) {
+            cars[i].efficiency -= 85;
+        } else if (reset && cars[i].xd) {
+            cars[i].efficiency += 85;
+        }
         cars[i].efficiency += efficiency;
     }
 }
