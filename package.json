@@ -1,14 +1,14 @@
 {
-  "name": "spirit_cars",
-  "version": "1.0.0",
+  "name": "driftspirit car list",
+  "version": "2.0.0",
   "description": "",
-  "main": "list.html",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "author": "kfuse",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
