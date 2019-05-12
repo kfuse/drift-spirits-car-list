@@ -756,25 +756,25 @@ class List {
         power,
         specs;
     switch (plus) {
-        case 0:
-            power = -12;
-            specs = -60;
-            break;
-        case 1:
-            power = 6;
-            specs = 30;
-            break;
-        case 2:
-            power = 6;
-            specs = 30;
-            break;
+      case 0:
+        power = -12;
+        specs = -60;
+        break;
+      case 1:
+        power = 6;
+        specs = 30;
+        break;
+      case 2:
+        power = 6;
+        specs = 30;
+        break;
     }
     for (i = 0; i < cars.length; i++) {
-        cars[i].power += power;
-        cars[i].speed += specs;
-        cars[i].acceleration += specs;
-        cars[i].handling += specs;
-        cars[i].nitro += specs;
+      cars[i].power += power;
+      cars[i].speed += specs;
+      cars[i].acceleration += specs;
+      cars[i].handling += specs;
+      cars[i].nitro += specs;
     }
   }
 
@@ -787,71 +787,71 @@ class List {
         sevenStarOffset = {},
         efficiency;
     if (originalStars < 5) {
-        sevenStarOffset.power = 40;
-        sevenStarOffset.specs = 200;
-        sevenStarOffset.efficiency = 135;
+      sevenStarOffset.power = 40;
+      sevenStarOffset.specs = 200;
+      sevenStarOffset.efficiency = 135;
     } else {
-        sevenStarOffset.power = 60;
-        sevenStarOffset.specs = 300;
-        sevenStarOffset.efficiency = 135;
+      sevenStarOffset.power = 60;
+      sevenStarOffset.specs = 300;
+      sevenStarOffset.efficiency = 135;
     }
     switch (star) {
-        case 3:
-            power      = -80  - sevenStarOffset.power;
-            specs      = -400 - sevenStarOffset.specs;
-            efficiency = -255 - sevenStarOffset.efficiency;
-            break;
-        case 4:
-            if (!reset) {
-                power      = 20;
-                specs      = 100;
-                efficiency = 75;
-            } else {
-                power      = -60  - sevenStarOffset.power;
-                specs      = -300 - sevenStarOffset.specs;
-                efficiency = -180 - sevenStarOffset.efficiency;
-            }
-            break;
-        case 5:
-            if (!reset) {
-                power      = 20;
-                specs      = 100;
-                efficiency = 80;
-            } else {
-                power      = -40  - sevenStarOffset.power;
-                specs      = -200 - sevenStarOffset.specs;
-                efficiency = -100 - sevenStarOffset.efficiency;
-            }
-            break;
-        case 6:
-            if (!reset) {
-                power = 40;
-                specs = 200;
-                efficiency = 100;
-            } else {
-                power      = -sevenStarOffset.power;
-                specs      = -sevenStarOffset.specs;
-                efficiency = -sevenStarOffset.efficiency;
-            }
-            break;
-        case 7:
-            power      = sevenStarOffset.power;
-            specs      = sevenStarOffset.specs;
-            efficiency = sevenStarOffset.efficiency;
-            break;
+      case 3:
+        power      = -80  - sevenStarOffset.power;
+        specs      = -400 - sevenStarOffset.specs;
+        efficiency = -255 - sevenStarOffset.efficiency;
+        break;
+      case 4:
+        if (!reset) {
+          power      = 20;
+          specs      = 100;
+          efficiency = 75;
+        } else {
+          power      = -60  - sevenStarOffset.power;
+          specs      = -300 - sevenStarOffset.specs;
+          efficiency = -180 - sevenStarOffset.efficiency;
+        }
+        break;
+      case 5:
+        if (!reset) {
+          power      = 20;
+          specs      = 100;
+          efficiency = 80;
+        } else {
+          power      = -40  - sevenStarOffset.power;
+          specs      = -200 - sevenStarOffset.specs;
+          efficiency = -100 - sevenStarOffset.efficiency;
+        }
+        break;
+      case 6:
+        if (!reset) {
+          power = 40;
+          specs = 200;
+          efficiency = 100;
+        } else {
+          power      = -sevenStarOffset.power;
+          specs      = -sevenStarOffset.specs;
+          efficiency = -sevenStarOffset.efficiency;
+        }
+        break;
+      case 7:
+        power      = sevenStarOffset.power;
+        specs      = sevenStarOffset.specs;
+        efficiency = sevenStarOffset.efficiency;
+        break;
     }
     for (i = 0; i < cars.length; i++) {
-        cars[i].power += power;
-        cars[i].speed += specs;
-        cars[i].acceleration += specs;
-        cars[i].handling += specs;
-        cars[i].nitro += specs;
-        if (star === 7 && cars[i].xd) {
-            cars[i].efficiency -= 85;
-        } else if (reset && cars[i].xd) {
-            cars[i].efficiency += 85;
-        }
-        cars[i].efficiency += efficiency;
+      cars[i].power += power;
+      cars[i].speed += specs;
+      cars[i].acceleration += specs;
+      cars[i].handling += specs;
+      cars[i].nitro += specs;
+      if (star === 7 && cars[i].xd) {
+        cars[i].efficiency -= 85;
+      } else if (reset && cars[i].xd) {
+        cars[i].efficiency += 85;
+      }
+      cars[i].efficiency += efficiency;
     }
   }
 
@@ -869,60 +869,60 @@ class List {
         specs = {engine:0, transmission:0, tire:0, nitro:0, ecu:0, free1:0, free2:0},
         free = {towerbar:0, suspension:0, clutch:0, shaft:0, muffler:0, turbine:0};
     for (key in parts) {
-        if (parts[key].size == 0) break;
-        if (key === "ecu") {
-            specs[key] = (parseInt(parts[key].size, 10)) * 5 + (parseInt(parts[key].level, 10) - 1);
-        } else if (key.match(/free/)) {
-            if (parts[key].selected === "towerbar" || parts[key].selected === "clutch" || parts[key].selected === "muffler") {
-                coefficient = 2;
-            } else {
-                coefficient = 3;
-            }
-            free[parts[key].selected] += (parseInt(parts[key].size, 10) - 1) * coefficient + parseInt(parts[key].level, 10) * coefficient;
+      if (parts[key].size == 0) break;
+      if (key === "ecu") {
+        specs[key] = (parseInt(parts[key].size, 10)) * 5 + (parseInt(parts[key].level, 10) - 1);
+      } else if (key.match(/free/)) {
+        if (parts[key].selected === "towerbar" || parts[key].selected === "clutch" || parts[key].selected === "muffler") {
+          coefficient = 2;
         } else {
-            specs[key] = (parseInt(parts[key].size, 10) - 1) * 5 + parseInt(parts[key].level, 10) * 5;
+          coefficient = 3;
         }
+        free[parts[key].selected] += (parseInt(parts[key].size, 10) - 1) * coefficient + parseInt(parts[key].level, 10) * coefficient;
+      } else {
+        specs[key] = (parseInt(parts[key].size, 10) - 1) * 5 + parseInt(parts[key].level, 10) * 5;
+      }
     }
     for (i = 0; i < carLevel; i++) {
-        if (i === 0) continue;
-        rotationIndex = (i - 1) % 5;
-        if (rotationIndex === 4) {
-            specs[carLevelRotation[rotationIndex]] += 1;
-            if (i === 95) {
-                //レベル96なら燃費2改善
-                specs[carLevelRotation[rotationIndex]] += 1;
-            }
-        } else {
-            specs[carLevelRotation[rotationIndex]] += 5;
+      if (i === 0) continue;
+      rotationIndex = (i - 1) % 5;
+      if (rotationIndex === 4) {
+        specs[carLevelRotation[rotationIndex]] += 1;
+        if (i === 95) {
+          //レベル96なら燃費2改善
+          specs[carLevelRotation[rotationIndex]] += 1;
         }
+      } else {
+        specs[carLevelRotation[rotationIndex]] += 5;
+      }
     }
     for (i = 0; i < cars.length; i++) {
-        if (mode === "set") {
-            cars[i].speed = originalCars[i].speed + specs["engine"] + free["muffler"] + free["turbine"];
-            cars[i].acceleration = originalCars[i].acceleration + specs["transmission"] + free["clutch"] + free["shaft"];
-            cars[i].handling = originalCars[i].handling + specs["tire"] + free["towerbar"] + free["suspension"];
-            cars[i].nitro = originalCars[i].nitro + specs["nitro"];
-            cars[i].efficiency = originalCars[i].efficiency - specs["ecu"];
-            cars[i].power = Math.floor((cars[i].speed + cars[i].acceleration + cars[i].handling + cars[i].nitro) / 20);
-        } else {
-            cars[i].speed = originalCars[i].speed - specs["engine"] - free["muffler"] - free["turbine"];
-            cars[i].acceleration = originalCars[i].acceleration - specs["transmission"] - free["clutch"] - free["shaft"];
-            cars[i].handling = originalCars[i].handling - specs["tire"] - free["towerbar"] - free["suspension"];
-            cars[i].nitro = originalCars[i].nitro - specs["nitro"];
-            cars[i].efficiency = originalCars[i].efficiency + specs["ecu"];
-            cars[i].power = Math.floor((cars[i].speed + cars[i].acceleration + cars[i].handling + cars[i].nitro) / 20);
-        }
+      if (mode === "set") {
+        cars[i].speed = originalCars[i].speed + specs["engine"] + free["muffler"] + free["turbine"];
+        cars[i].acceleration = originalCars[i].acceleration + specs["transmission"] + free["clutch"] + free["shaft"];
+        cars[i].handling = originalCars[i].handling + specs["tire"] + free["towerbar"] + free["suspension"];
+        cars[i].nitro = originalCars[i].nitro + specs["nitro"];
+        cars[i].efficiency = originalCars[i].efficiency - specs["ecu"];
+        cars[i].power = Math.floor((cars[i].speed + cars[i].acceleration + cars[i].handling + cars[i].nitro) / 20);
+      } else {
+        cars[i].speed = originalCars[i].speed - specs["engine"] - free["muffler"] - free["turbine"];
+        cars[i].acceleration = originalCars[i].acceleration - specs["transmission"] - free["clutch"] - free["shaft"];
+        cars[i].handling = originalCars[i].handling - specs["tire"] - free["towerbar"] - free["suspension"];
+        cars[i].nitro = originalCars[i].nitro - specs["nitro"];
+        cars[i].efficiency = originalCars[i].efficiency + specs["ecu"];
+        cars[i].power = Math.floor((cars[i].speed + cars[i].acceleration + cars[i].handling + cars[i].nitro) / 20);
+      }
     }
   }
 
   static resetParts(cars, originalCars) {
     for (i = 0; i < cars.length; i++) {
-        cars[i].speed = originalCars[i].speed;
-        cars[i].acceleration = originalCars[i].acceleration;
-        cars[i].handling = originalCars[i].handling;
-        cars[i].nitro = originalCars[i].nitro;
-        cars[i].efficiency = originalCars[i].efficiency;
-        cars[i].power = originalCars[i].power;
+      cars[i].speed = originalCars[i].speed;
+      cars[i].acceleration = originalCars[i].acceleration;
+      cars[i].handling = originalCars[i].handling;
+      cars[i].nitro = originalCars[i].nitro;
+      cars[i].efficiency = originalCars[i].efficiency;
+      cars[i].power = originalCars[i].power;
     }
   }
 }
