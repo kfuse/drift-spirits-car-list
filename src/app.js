@@ -16,7 +16,11 @@ class App {
         this.btnViewSettingClick(e);
       });
     }
+    Util.addListener(document.getElementById("btnCompare"), "click", (e) => {
+      this.btnCompareClick(e);
+    });
     if (!JSON.parse(localStorage.getItem("content.driftspirits.car.list.setting"))) {
+      localStorage.setItem("content.driftspirits.car.list.setting", JSON.stringify({shownNitroless:false,shownPerformance:false}));
       return;
     } else {
       this.setting = JSON.parse(localStorage.getItem("content.driftspirits.car.list.setting"));
@@ -26,9 +30,6 @@ class App {
         Util.addClass(document.getElementById(key), "on");
       }
     }
-    Util.addListener(document.getElementById("btnCompare"), "click", (e) => {
-      this.btnCompareClick(e);
-    });
     this.refreshAllViewSetting(this.setting);
     this.setView();
   }
