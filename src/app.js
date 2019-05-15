@@ -21,6 +21,7 @@ class App {
     });
     if (!JSON.parse(localStorage.getItem("content.driftspirits.car.list.setting"))) {
       localStorage.setItem("content.driftspirits.car.list.setting", JSON.stringify({shownNitroless:false,shownPerformance:false}));
+      this.setting = {shownNitroless:false,shownPerformance:false};
       return;
     } else {
       this.setting = JSON.parse(localStorage.getItem("content.driftspirits.car.list.setting"));
