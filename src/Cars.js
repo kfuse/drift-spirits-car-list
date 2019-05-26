@@ -15,6 +15,7 @@ class Cars {
         carLevel: 1,
         shownNitroless: false,
         shownPerformance: false,
+        filteringText: "",
         parts: {
           engine: {
             size: 1,
@@ -67,6 +68,15 @@ class Cars {
         },
         isAppliedParts: false,
         saveMessage: ""
+      },
+      computed: {
+        filteredCars: function() {
+          var self = this,
+              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+          return self.cars.filter( function(car) {
+            return car.name.match(regExp) !== null;
+          });
+        }
       },
       methods: {
         incrementStar: function(e) {
@@ -167,6 +177,7 @@ class Cars {
         carLevel: 1,
         shownNitroless: false,
         shownPerformance: false,
+        filteringText: "",
         parts: {
           engine: {
             size: 1,
@@ -219,6 +230,15 @@ class Cars {
         },
         isAppliedParts: false,
         saveMessage: ""
+      },
+      computed: {
+        filteredCars: function() {
+          var self = this,
+              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+          return self.cars.filter( function(car) {
+            return car.name.match(regExp) !== null;
+          });
+        }
       },
       methods: {
         incrementStar: function(e) {
@@ -319,6 +339,7 @@ class Cars {
         carLevel: 1,
         shownNitroless: false,
         shownPerformance: false,
+        filteringText: "",
         parts: {
           engine: {
             size: 1,
@@ -371,6 +392,15 @@ class Cars {
         },
         isAppliedParts: false,
         saveMessage: ""
+      },
+      computed: {
+        filteredCars: function() {
+          var self = this,
+              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+          return self.cars.filter( function(car) {
+            return car.name.match(regExp) !== null;
+          });
+        }
       },
       methods: {
         incrementStar: function(e) {
@@ -471,6 +501,7 @@ class Cars {
         carLevel: 1,
         shownNitroless: false,
         shownPerformance: false,
+        filteringText: "",
         parts: {
           engine: {
             size: 1,
@@ -523,6 +554,15 @@ class Cars {
         },
         isAppliedParts: false,
         saveMessage: ""
+      },
+      computed: {
+        filteredCars: function() {
+          var self = this,
+              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+          return self.cars.filter( function(car) {
+            return car.name.match(regExp) !== null;
+          });
+        }
       },
       methods: {
         incrementStar: function(e) {
@@ -623,6 +663,7 @@ class Cars {
         carLevel: 1,
         shownNitroless: false,
         shownPerformance: false,
+        filteringText: "",
         parts: {
           engine: {
             size: 1,
@@ -675,6 +716,15 @@ class Cars {
         },
         isAppliedParts: false,
         saveMessage: ""
+      },
+      computed: {
+        filteredCars: function() {
+          var self = this,
+              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+          return self.cars.filter( function(car) {
+            return car.name.match(regExp) !== null;
+          });
+        }
       },
       methods: {
         incrementStar: function(e) {
@@ -746,6 +796,14 @@ class Cars {
         }
       }
     });
+  }
+
+  setFilteringText(text) {
+    this.threeStars.filteringText = text;
+    this.fourStars.filteringText = text;
+    this.fiveStars.filteringText = text;
+    this.sixStars.filteringText = text;
+    this.sevenStars.filteringText = text;
   }
 
 }
