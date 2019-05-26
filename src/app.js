@@ -19,6 +19,9 @@ class App {
     Util.addListener(document.getElementById("btnCompare"), "click", (e) => {
       this.btnCompareClick(e);
     });
+    Util.addListener(document.getElementById("filteringText"), "keyup", (e) => {
+      Cars.setFilteringText(e.target.value);
+    });
     if (!JSON.parse(localStorage.getItem("content.driftspirits.car.list.setting"))) {
       localStorage.setItem("content.driftspirits.car.list.setting", JSON.stringify({shownNitroless:false,shownPerformance:false}));
       this.setting = {shownNitroless:false,shownPerformance:false};

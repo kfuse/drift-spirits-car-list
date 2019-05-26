@@ -31,6 +31,13 @@ a {
 .text {
     font-size: 14px;
 }
+.iptText {
+    padding: 6px 2px;
+    font-size: 14px;
+}
+.hiddenText {
+    display: none;
+}
 .clearfix:after {
     display: block;
     clear: both;
@@ -51,6 +58,9 @@ a {
     padding: 5px;
     border-left: 4px solid #ccc;
     font-size: 14px;
+}
+.viewSetting {
+    margin-bottom: 10px;
 }
 .viewSetting li {
     float: left;

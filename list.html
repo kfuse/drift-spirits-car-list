@@ -6,7 +6,7 @@
 <title>[ドリフトスピリッツ] 戦闘力のシミュレーションができる車種一覧</title>
 <meta name="description" content="ドリフトスピリッツの車種一覧です。レアリティや＋を指定したり、パーツ、愛車レベルを入力して戦闘力のシミュレーションができます。☆7とXD車に対応しました。XD INTEGRA, Hot-Versionコラボ車, PAJEROなどのイベント車を追加しました。">
 <meta name="fragment" content="!">
-<link rel="stylesheet" href="css/list.css?t=110" media="all">
+<link rel="stylesheet" href="css/list.css?t=111" media="all">
 <link rel="canonical" href="http://manoamano.starfree.jp/content/driftspirits/car/list.html">
 </head>
 <body>
@@ -24,8 +24,11 @@
 <li><a href="#" class="btnViewSetting" id="shownPerformance"><span></span>コスパ</a></li>
 </ul>
 
+<label for="filteringText" class="text">車名で絞込み: </label><input type="text" id="filteringText" class="iptText">
+
 <div id="threeStars">
 <h3 class="titleStar">初期レアリティ☆☆☆ (星3)</h3>
+<input type="text" v-model="filteringText" class="hiddenText">
 <div class="carListTool">
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
@@ -113,7 +116,7 @@
 <th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
 <th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
-<tr v-for="car in cars">
+<tr v-for="car in filteredCars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
 <td>{{car.power}}</td>
 <td>{{car.speed}}</td>
@@ -129,6 +132,7 @@
 
 <div id="fourStars">
 <h3 class="titleStar">初期レアリティ☆☆☆☆ (星4)</h3>
+<input type="text" v-model="filteringText" class="hiddenText">
 <div class="carListTool">
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
@@ -216,7 +220,7 @@
 <th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
 <th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
-<tr v-for="car in cars">
+<tr v-for="car in filteredCars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
 <td>{{car.power}}</td>
 <td>{{car.speed}}</td>
@@ -232,6 +236,7 @@
 
 <div id="fiveStars">
 <h3 class="titleStar">初期レアリティ☆☆☆☆☆ (星5)</h3>
+<input type="text" v-model="filteringText" class="hiddenText">
 <div class="carListTool">
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
@@ -319,7 +324,7 @@
 <th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
 <th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
-<tr v-for="car in cars">
+<tr v-for="car in filteredCars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
 <td>{{car.power}}</td>
 <td>{{car.speed}}</td>
@@ -335,6 +340,7 @@
 
 <div id="sixStars">
 <h3 class="titleStar">初期レアリティ☆☆☆☆☆☆ (星6)</h3>
+<input type="text" v-model="filteringText" class="hiddenText">
 <div class="carListTool">
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
@@ -422,7 +428,7 @@
 <th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
 <th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
-<tr v-for="car in cars">
+<tr v-for="car in filteredCars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
 <td>{{car.power}}</td>
 <td>{{car.speed}}</td>
@@ -438,6 +444,7 @@
 
 <div id="sevenStars">
 <h3 class="titleStar">初期レアリティ☆☆☆☆☆☆ (星7)</h3>
+<input type="text" v-model="filteringText" class="hiddenText">
 <div class="carListTool">
 <span class="labelStatus">ステータス:</span>
 <a href="#" class="btnStars starStatus{{stars}}" v-on:click="incrementStar"></a>
@@ -524,7 +531,7 @@
 <th v-if="shownNitroless" class="nitroless">ニトロ抜き</th>
 <th v-if="shownPerformance" class="performance">コスパ</th>
 </tr>
-<tr v-for="car in cars">
+<tr v-for="car in filteredCars">
 <td><a href="{{car.link}}" v-if="car.link !== undefined" target="_blank">{{car.name}}</a><span v-else>{{car.name}}</span></td>
 <td>{{car.power}}</td>
 <td>{{car.speed}}</td>
@@ -579,7 +586,7 @@
 </script>
 
 <script src="js/carlist.js?t=0525"></script>
-<script src="js/app.js?t=101"></script>
+<script src="js/app.js?t=102"></script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
