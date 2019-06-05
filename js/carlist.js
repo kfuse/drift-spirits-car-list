@@ -105,6 +105,7 @@ fourStarsCars = [
   {name:"FALKEN PETRONAS OTG86'15",power:473,speed:2397,acceleration:815,handling:2611,nitro:3646,efficiency:400},
   {name:"BALLADE SPORTS CR-X Si AS",power:472,speed:2277,acceleration:1538,handling:2527,nitro:3098,efficiency:365},
   {name:"イニシャルD インパクトブルー773",power:472,speed:2301,acceleration:778,handling:2578,nitro:3798,efficiency:365},
+  {name:"PAC-MAN",power:472,speed:2285,acceleration:1116,handling:2712,nitro:3326,efficiency:365},
   {name:"\"悪魔のZ\" -究極コラボ-",power:472,speed:2347,acceleration:857,handling:2272,nitro:3982,efficiency:420},
   {name:"ALTO WORKS HA36S",power:471,speed:2347,acceleration:867,handling:2247,nitro:3967,efficiency:370},
   {name:"SWIFT SPORT ZC32S",power:471,speed:2300,acceleration:950,handling:2570,nitro:3600,efficiency:385},
@@ -327,12 +328,14 @@ sixStarsCars = [
   {name:"TRUENO GT-APEX AE86 [天駆ける翼]",power:565,speed:2796,acceleration:1276,handling:3500,nitro:3731,efficiency:580},
   {name:"\"悪魔のZ\"[北見チューン] オーラVer.",power:564,speed:2847,acceleration:1287,handling:2877,nitro:4277,efficiency:595},
   {name:"Gallardo LP560-4",power:560,speed:3001,acceleration:1256,handling:2752,nitro:4198,efficiency:600},
+  {name:"MUGEN CIVIC TYPE R EURO FN2",power:559,speed:2770,acceleration:1464,handling:3070,nitro:3877,efficiency:585},
   {name:"GT-R R35",power:558,speed:2705,acceleration:1055,handling:3005,nitro:4405,efficiency:595},
   {name:"FAIRLADY Z S30 \"悪魔のZ\"[北見チューン]",power:553,speed:2727,acceleration:1277,handling:2707,nitro:4367,efficiency:620}
 ],
 sevenStarsCars = [
   {name:"NISSAN GT-R (R35) 世界最速ドリフトVer.",power:665,speed:3202,acceleration:1813,handling:3599,nitro:4695,efficiency:765},
   {name:"NISSAN GT-R R35 \"不知火\"",power:665,speed:3234,acceleration:1838,handling:3514,nitro:4720,efficiency:760},
+  {name:"NSX NC1 \"PHELIOS\"",power:663,speed:3303,acceleration:1953,handling:3643,nitro:4363,efficiency:755},
   {name:"NISSAN GT-R NISMO R35 2017",power:660,speed:3201,acceleration:1732,handling:3536,nitro:4731,efficiency:750},
   {name:"NISSAN GT-R (R35) MY17",power:649,speed:3200,acceleration:1526,handling:3535,nitro:4730,efficiency:750},
   {name:"911 \"ブラックバード\"[北見チューン] カットインVer.",power:636,speed:3337,acceleration:1693,handling:3276,nitro:4421,efficiency:745},
