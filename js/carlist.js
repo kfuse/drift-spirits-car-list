@@ -163,6 +163,7 @@ fourStarsCars = [
   {name:"SPORTS800 UP15",power:430,speed:2153,acceleration:653,handling:2153,nitro:3653,efficiency:345}
 ],
 fiveStarsCars = [
+  {name:"WILD GANG",power:520,speed:2577,acceleration:1400,handling:2777,nitro:3656,efficiency:480},
   {name:"GReddy 35RX spec-D'18",power:533,speed:3014,acceleration:1392,handling:2734,nitro:3520,efficiency:520},
   {name:"VIPER SRT10 \"Jormungand\"",power:533,speed:2788,acceleration:1393,handling:2756,nitro:3740,efficiency:525},
   {name:"FAIRLADY Z S30 \"日向\"",power:532,speed:2635,acceleration:1080,handling:3510,nitro:3424,efficiency:510},
