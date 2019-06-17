@@ -212,6 +212,7 @@ fiveStarsCars = [
   {name:"SUPRA RZ JZA80 \"紅獅子\"",power:520,speed:3003,acceleration:1585,handling:2153,nitro:3665,efficiency:490},
   {name:"RX-7 Type R FD3S [PROJECT.D]",power:520,speed:2722,acceleration:1033,handling:2645,nitro:4001,efficiency:505},
   {name:"RX-7 FD3S [PROJECT.D] -究極コラボ-",power:520,speed:2722,acceleration:1151,handling:2645,nitro:3901,efficiency:505},
+  {name:"RX-7 FC3S \"Flamberge\"",power:520,speed:2775,acceleration:1367,handling:2973,nitro:3286,efficiency:510},
   {name:"LFA LFA10",power:519,speed:2661,acceleration:1361,handling:2761,nitro:3611,efficiency:480},
   {name:"M5 \"Helter Skelter\"",power:519,speed:2411,acceleration:1111,handling:2861,nitro:4011,efficiency:490},
   {name:"SKYLINE GT-R BNR34 \"K0\"",power:519,speed:2661,acceleration:1176,handling:2686,nitro:3858,efficiency:495},
