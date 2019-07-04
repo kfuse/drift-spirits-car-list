@@ -327,6 +327,7 @@ sixStarsCars = [
   {name:"Aventador LP700-4",power:571,speed:2974,acceleration:1484,handling:2954,nitro:4014,efficiency:605},
   {name:"SEEKER FD2",power:571,speed:2906,acceleration:1534,handling:3078,nitro:3909,efficiency:615},
   {name:"ドリキンAE86ストリート号",power:570,speed:2856,acceleration:1381,handling:3462,nitro:3705,efficiency:605},
+  {name:"MR2 GT-S SW20 \"Peacemaker・改\"",power:570,speed:2657,acceleration:1629,handling:3234,nitro:3884,efficiency:610},
   {name:"GT-R NISMO R35",power:570,speed:2791,acceleration:1141,handling:3091,nitro:4391,efficiency:625},
   {name:"911 \"ブラックバード\"[C1ランナー] オーラVer.",power:566,speed:2979,acceleration:1333,handling:2933,nitro:4090,efficiency:600},
   {name:"911 \"ブラックバード\"[北見チューン] オーラVer.",power:566,speed:2923,acceleration:1387,handling:2993,nitro:4035,efficiency:600},
@@ -344,6 +345,7 @@ sevenStarsCars = [
   {name:"NSX NC1 \"PHELIOS\"",power:663,speed:3303,acceleration:1953,handling:3643,nitro:4363,efficiency:755},
   {name:"NISSAN GT-R NISMO R35 2017",power:660,speed:3201,acceleration:1732,handling:3536,nitro:4731,efficiency:750},
   {name:"NISSAN GT-R (R35) MY17",power:649,speed:3200,acceleration:1526,handling:3535,nitro:4730,efficiency:750},
+  {name:"S2000 AP1 \"雀蜂\" Gold Edition",power:637,speed:3364,acceleration:1702,handling:3564,nitro:4113,efficiency:760},
   {name:"911 \"ブラックバード\"[北見チューン] カットインVer.",power:636,speed:3337,acceleration:1693,handling:3276,nitro:4421,efficiency:745},
   {name:"\"悪魔のZ\"[北見チューン] カットインVer.",power:635,speed:3177,acceleration:1697,handling:3227,nitro:4617,efficiency:740},
 ];
