@@ -32,6 +32,7 @@ var threeStarsCars = [
   {name:"HIACE [北見サイクル]",power:387,speed:2088,acceleration:288,handling:1988,nitro:3388,efficiency:325}
 ],
 fourStarsCars = [
+  {name:"SKYLINE 2000GT-R 二階堂 2019Ver.(KPGC110)",power:492,speed:2740,acceleration:1230,handling:2396,nitro:3485,efficiency:420},
   {name:"SYNCi",power:495,speed:2563,acceleration:1095,handling:2563,nitro:3680,efficiency:405},
   {name:"HIRANO TIRE チェイサー初号機",power:490,speed:2742,acceleration:876,handling:2430,nitro:3757,efficiency:395},
   {name:"TRUENO 2door AE86 信司Ver.",power:490,speed:2336,acceleration:986,handling:2699,nitro:3798,efficiency:395},
@@ -93,6 +94,7 @@ fourStarsCars = [
   {name:"Focus RS",power:477,speed:2420,acceleration:920,handling:2418,nitro:3801,efficiency:405},
   {name:"TOYO TIRES・TADOKORO TRUENO",power:477,speed:2111,acceleration:931,handling:2693,nitro:3822,efficiency:410},
   {name:"CHALLENGER SRT8",power:477,speed:2412,acceleration:1012,handling:2112,nitro:4012,efficiency:440},
+  {name:"ハイギヤード PIAZZA JR130",power:477,speed:2832,acceleration:1212,handling:1882,nitro:3632,efficiency:455},
   {name:"LANCER Evolution IV [4th anniv.]",power:476,speed:2375,acceleration:895,handling:2545,nitro:3705,efficiency:390},
   {name:"TEAM RYOJI WAKO'S LAUREL",power:476,speed:2413,acceleration:905,handling:2469,nitro:3741,efficiency:390},
   {name:"FD3S 頭文字D-夢現-Ver.",power:476,speed:2467,acceleration:792,handling:2469,nitro:3800,efficiency:400},
@@ -108,6 +110,7 @@ fourStarsCars = [
   {name:"BALLADE SPORTS CR-X Si AS",power:472,speed:2277,acceleration:1538,handling:2527,nitro:3098,efficiency:365},
   {name:"イニシャルD インパクトブルー773",power:472,speed:2301,acceleration:778,handling:2578,nitro:3798,efficiency:365},
   {name:"PAC-MAN",power:472,speed:2285,acceleration:1116,handling:2712,nitro:3326,efficiency:365},
+  {name:"メカドック CELICA XX 2800GT",power:472,speed:2376,acceleration:776,handling:2426,nitro:3876,efficiency:395},
   {name:"\"悪魔のZ\" -究極コラボ-",power:472,speed:2347,acceleration:857,handling:2272,nitro:3982,efficiency:420},
   {name:"ALTO WORKS HA36S",power:471,speed:2347,acceleration:867,handling:2247,nitro:3967,efficiency:370},
   {name:"SWIFT SPORT ZC32S",power:471,speed:2300,acceleration:950,handling:2570,nitro:3600,efficiency:385},
@@ -136,6 +139,7 @@ fourStarsCars = [
   {name:"スーパーぽち メイクヒロタ RSワタナベ ロードスター",power:465,speed:2399,acceleration:988,handling:2344,nitro:3572,efficiency:365},
   {name:"AE86 頭文字D-夢現- Ver.",power:465,speed:2222,acceleration:716,handling:2723,nitro:3652,efficiency:375},
   {name:"SKYLINE GT-R BNR34 -爆エコ-",power:465,speed:2291,acceleration:641,handling:2486,nitro:3886,efficiency:380},
+  {name:"SPORTS800 女暴小町Ver.",power:464,speed:2298,acceleration:898,handling:2298,nitro:3798,efficiency:365},
   {name:"STAGEA Autech Version 260RS (WGNC34)",power:464,speed:2359,acceleration:892,handling:2377,nitro:3651,efficiency:380},
   {name:"TOYOTA 86 ZN6 -爆ハン-",power:464,speed:2247,acceleration:647,handling:2747,nitro:3647,efficiency:390},
   {name:"LANCER EvolutionIII CE9A",power:464,speed:2299,acceleration:699,handling:2399,nitro:3899,efficiency:400},
