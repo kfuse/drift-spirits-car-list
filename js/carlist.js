@@ -32,8 +32,8 @@ var threeStarsCars = [
   {name:"HIACE [北見サイクル]",power:387,speed:2088,acceleration:288,handling:1988,nitro:3388,efficiency:325}
 ],
 fourStarsCars = [
-  {name:"SKYLINE 2000GT-R 二階堂 2019Ver.(KPGC110)",power:492,speed:2740,acceleration:1230,handling:2396,nitro:3485,efficiency:420},
   {name:"SYNCi",power:495,speed:2563,acceleration:1095,handling:2563,nitro:3680,efficiency:405},
+  {name:"SKYLINE 2000GT-R 二階堂 2019Ver.(KPGC110)",power:492,speed:2740,acceleration:1230,handling:2396,nitro:3485,efficiency:420},
   {name:"HIRANO TIRE チェイサー初号機",power:490,speed:2742,acceleration:876,handling:2430,nitro:3757,efficiency:395},
   {name:"TRUENO 2door AE86 信司Ver.",power:490,speed:2336,acceleration:986,handling:2699,nitro:3798,efficiency:395},
   {name:"TRUENO 2door AE86 信司Ver. -究極コラボ- ",power:489,speed:2336,acceleration:986,handling:2699,nitro:3769,efficiency:395},
@@ -137,6 +137,7 @@ fourStarsCars = [
   {name:"CHASER JZX100 -爆加-",power:466,speed:2306,acceleration:956,handling:2406,nitro:3656,efficiency:405},
   {name:"SUPRA RZ JZA80",power:466,speed:2306,acceleration:706,handling:2406,nitro:3906,efficiency:410},
   {name:"スーパーぽち メイクヒロタ RSワタナベ ロードスター",power:465,speed:2399,acceleration:988,handling:2344,nitro:3572,efficiency:365},
+  {name:"CELICA 1600GTV 松桐坊主 2019Ver.",power:465,speed:2300,acceleration:1065,handling:2432,nitro:3522,efficiency:375},
   {name:"AE86 頭文字D-夢現- Ver.",power:465,speed:2222,acceleration:716,handling:2723,nitro:3652,efficiency:375},
   {name:"SKYLINE GT-R BNR34 -爆エコ-",power:465,speed:2291,acceleration:641,handling:2486,nitro:3886,efficiency:380},
   {name:"SPORTS800 女暴小町Ver.",power:464,speed:2298,acceleration:898,handling:2298,nitro:3798,efficiency:365},
@@ -161,6 +162,7 @@ fourStarsCars = [
   {name:"CHASER JZX100",power:456,speed:2306,acceleration:656,handling:2406,nitro:3756,efficiency:405},
   {name:"FAIRLADY Z Z32",power:456,speed:2306,acceleration:606,handling:2406,nitro:3806,efficiency:425},
   {name:"FAIRLADY Z Z31",power:455,speed:2301,acceleration:599,handling:2396,nitro:3804,efficiency:410},
+  {name:"SKYLINE 2000 Turbo GT-ES (C211)",power:454,speed:2326,acceleration:888,handling:2354,nitro:3531,efficiency:360},
   {name:"CORVETTE C3",power:454,speed:2324,acceleration:724,handling:2124,nitro:3924,efficiency:435},
   {name:"Focus ST",power:451,speed:2150,acceleration:820,handling:2258,nitro:3801,efficiency:385},
   {name:"CROWN ATHLETE GRS204",power:451,speed:2332,acceleration:732,handling:2132,nitro:3832,efficiency:405},
@@ -210,6 +212,7 @@ fiveStarsCars = [
   {name:"CORVETTE C6 ZR1",power:522,speed:2676,acceleration:1026,handling:2576,nitro:4176,efficiency:510},
   {name:"RCT \"ブラックバード\" C1ランナーVer.",power:522,speed:2656,acceleration:987,handling:2705,nitro:4102,efficiency:550},
   {name:"\"ブラックバード\" [北見チューン] -究極コラボ-",power:522,speed:2706,acceleration:987,handling:2645,nitro:4102,efficiency:550},
+  {name:"チャンプ RX-7 SA22C リアルVer.",power:521,speed:2613,acceleration:1269,handling:2468,nitro:4083,efficiency:480},
   {name:"MERCEDES-AMG GT S NOB SPECIAL",power:521,speed:2690,acceleration:1225,handling:2861,nitro:3655,efficiency:480},
   {name:"SLS AMG GT C197",power:521,speed:2719,acceleration:1219,handling:2619,nitro:3669,efficiency:485},
   {name:"S2000 AP1 城島Ver. -究極コラボ-",power:521,speed:2621,acceleration:1233,handling:2612,nitro:3955,efficiency:490},
