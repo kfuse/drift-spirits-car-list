@@ -1,4 +1,5 @@
 var threeStarsCars = [
+  {name:"CELICA 1600GTV 松桐坊主 2019Ver.",power:445,speed:2200,acceleration:965,handling:2332,nitro:3422,efficiency:300},
   {name:"ROADSTER RS NCEC-爆加-",power:445,speed:2125,acceleration:1040,handling:2225,nitro:3525,efficiency:325},
   {name:"DART GT",power:443,speed:2135,acceleration:745,handling:2245,nitro:3745,efficiency:315},
   {name:"Jack-o-Drifter",power:438,speed:2121,acceleration:455,handling:2300,nitro:3896,efficiency:300},
@@ -137,7 +138,6 @@ fourStarsCars = [
   {name:"CHASER JZX100 -爆加-",power:466,speed:2306,acceleration:956,handling:2406,nitro:3656,efficiency:405},
   {name:"SUPRA RZ JZA80",power:466,speed:2306,acceleration:706,handling:2406,nitro:3906,efficiency:410},
   {name:"スーパーぽち メイクヒロタ RSワタナベ ロードスター",power:465,speed:2399,acceleration:988,handling:2344,nitro:3572,efficiency:365},
-  {name:"CELICA 1600GTV 松桐坊主 2019Ver.",power:465,speed:2300,acceleration:1065,handling:2432,nitro:3522,efficiency:375},
   {name:"AE86 頭文字D-夢現- Ver.",power:465,speed:2222,acceleration:716,handling:2723,nitro:3652,efficiency:375},
   {name:"SKYLINE GT-R BNR34 -爆エコ-",power:465,speed:2291,acceleration:641,handling:2486,nitro:3886,efficiency:380},
   {name:"SPORTS800 女暴小町Ver.",power:464,speed:2298,acceleration:898,handling:2298,nitro:3798,efficiency:365},
