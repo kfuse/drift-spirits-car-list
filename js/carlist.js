@@ -153,6 +153,7 @@ fourStarsCars = [
   {name:"IMPREZA WRX STi GDB-C",power:462,speed:2306,acceleration:636,handling:2406,nitro:3906,efficiency:395},
   {name:"RX-8 SE3P",power:462,speed:2286,acceleration:686,handling:2486,nitro:3786,efficiency:405},
   {name:"SKYLINE GTS-R R31",power:462,speed:2304,acceleration:854,handling:2194,nitro:3894,efficiency:435},
+  {name:"GALANT VR-4 E39A",power:460,speed:2391,acceleration:878,handling:2511,nitro:3420,efficiency:385},
   {name:"SKYLINE RS-X Turbo C R30",power:460,speed:2300,acceleration:850,handling:2250,nitro:3800,efficiency:390},
   {name:"SAVANNA RX-7 FC3S",power:460,speed:2251,acceleration:651,handling:2551,nitro:3751,efficiency:430},
   {name:"SILVIA spec.R S15",power:459,speed:2284,acceleration:634,handling:2484,nitro:3784,efficiency:390},
@@ -256,6 +257,7 @@ fiveStarsCars = [
   {name:"BMW M5 F10M",power:517,speed:2612,acceleration:962,handling:2612,nitro:4162,efficiency:500},
   {name:"GULF ZESTINO S2000",power:516,speed:2630,acceleration:1180,handling:2930,nitro:3580,efficiency:470},
   {name:"SKYLINE GT-R BNR32 友也Ver.",power:516,speed:2873,acceleration:1085,handling:2639,nitro:3721,efficiency:485},
+  {name:"[XD]RX-8 SE3P",power:516,speed:2583,acceleration:937,handling:2727,nitro:4080,efficiency:495,xd:true},
   {name:"911 Turbo 3.6 964 元木明彦Ver.",power:516,speed:2550,acceleration:1165,handling:2778,nitro:3831,efficiency:495},
   {name:"[XD]SUPRA RZ JZA80",power:516,speed:2797,acceleration:1040,handling:2934,nitro:3555,efficiency:495,xd:true},
   {name:"[XD]CIVIC TYPE-R EK9",power:516,speed:2882,acceleration:712,handling:3161,nitro:3569,efficiency:495,xd:true},
@@ -270,6 +272,7 @@ fiveStarsCars = [
   {name:"VIPER SRT10",power:513,speed:2604,acceleration:1254,handling:2504,nitro:3904,efficiency:530},
   {name:"TOYOTA 86 \"Serval Cat\"",power:512,speed:2626,acceleration:1222,handling:3026,nitro:3370,efficiency:495},
   {name:"MR-S S EDITION ZZW30 小柏カイVer.",power:512,speed:2457,acceleration:1062,handling:2947,nitro:3777,efficiency:495},
+  {name:"[XD]ROADSTER NCEC",power:511,speed:2606,acceleration:1078,handling:2707,nitro:3828,efficiency:490,xd:true},
   {name:"[XD]180SX RPS13",power:511,speed:2592,acceleration:1062,handling:2732,nitro:3851,efficiency:500,xd:true},
   {name:"Ford GT",power:511,speed:2808,acceleration:1110,handling:2410,nitro:3910,efficiency:505},
   {name:"SWIFT SPORT \"Hummingbird\"",power:510,speed:2361,acceleration:1297,handling:2898,nitro:3663,efficiency:460},
@@ -348,6 +351,7 @@ sixStarsCars = [
   {name:"GT-R NISMO R35",power:570,speed:2791,acceleration:1141,handling:3091,nitro:4391,efficiency:625},
   {name:"911 \"ブラックバード\"[C1ランナー] オーラVer.",power:566,speed:2979,acceleration:1333,handling:2933,nitro:4090,efficiency:600},
   {name:"911 \"ブラックバード\"[北見チューン] オーラVer.",power:566,speed:2923,acceleration:1387,handling:2993,nitro:4035,efficiency:600},
+  {name:"ワタナベスーパーZ 240ZG リアルVer.(HS30)",power:566,speed:2864,acceleration:1643,handling:2823,nitro:4001,efficiency:615},
   {name:"TRUENO GT-APEX AE86 [天駆ける翼]",power:565,speed:2796,acceleration:1276,handling:3500,nitro:3731,efficiency:580},
   {name:"\"悪魔のZ\"[北見チューン] オーラVer.",power:564,speed:2847,acceleration:1287,handling:2877,nitro:4277,efficiency:595},
   {name:"CRINALE [25th anniv.]",power:560,speed:2878,acceleration:1711,handling:3309,nitro:3305,efficiency:590},
@@ -368,5 +372,6 @@ sevenStarsCars = [
   {name:"S2000 AP1 \"雀蜂\" Gold Edition",power:637,speed:3364,acceleration:1702,handling:3564,nitro:4113,efficiency:760},
   {name:"911 \"ブラックバード\"[北見チューン] カットインVer.",power:636,speed:3337,acceleration:1693,handling:3276,nitro:4421,efficiency:745},
   {name:"\"悪魔のZ\"[北見チューン] カットインVer.",power:635,speed:3177,acceleration:1697,handling:3227,nitro:4617,efficiency:740},
+  {name:"メカドック CELICA XX 2800GT リアルVer.",power:635,speed:3280,acceleration:1817,handling:3218,nitro:4388,efficiency:750},
 ];
 
