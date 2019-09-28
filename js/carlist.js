@@ -171,6 +171,7 @@ fourStarsCars = [
   {name:"R2 R RC2",power:449,speed:2321,acceleration:821,handling:2321,nitro:3535,efficiency:345},
   {name:"SAVANNA RX-7 SA22C",power:444,speed:2221,acceleration:621,handling:2421,nitro:3621,efficiency:400},
   {name:"ALCYONE SVX CXD",power:442,speed:2277,acceleration:627,handling:2177,nitro:3777,efficiency:420},
+  {name:"FAIRLADY Z 240ZG (HS30)",power:439,speed:2223,acceleration:782,handling:2341,nitro:3451,efficiency:335},
   {name:"COPEN Robe LA400K",power:435,speed:2147,acceleration:697,handling:2117,nitro:3747,efficiency:365},
   {name:"SPORTS800 UP15",power:430,speed:2153,acceleration:653,handling:2153,nitro:3653,efficiency:345}
 ],
@@ -247,6 +248,7 @@ fiveStarsCars = [
   {name:"TRUENO GT-APEX AE86 [PROJECT.D]",power:517,speed:2346,acceleration:943,handling:3344,nitro:3725,efficiency:475},
   {name:"190E 2.5-16 Evolution II W201",power:517,speed:2796,acceleration:1058,handling:2842,nitro:3644,efficiency:480},
   {name:"MARK X G's GRX133",power:517,speed:2857,acceleration:1069,handling:2657,nitro:3757,efficiency:480},
+  {name:"[XD]FAIRLADY Z (Z32)",power:517,speed:2788,acceleration:1007,handling:2888,nitro:3656,efficiency:485,xd:true},
   {name:"LANCER Evolution X Final Concept",power:517,speed:2836,acceleration:870,handling:2728,nitro:3913,efficiency:485},
   {name:"RX-7 FC3S [PROJECT.D]",power:517,speed:2636,acceleration:937,handling:3046,nitro:3736,efficiency:485},
   {name:"SKYLINE 2000GT KGC10 ジュンVer.",power:517,speed:2579,acceleration:1249,handling:2790,nitro:3732,efficiency:490},
