@@ -349,6 +349,7 @@ sixStarsCars = [
   {name:"LFA LFA10 Nurburgring Package",power:587,speed:2965,acceleration:1630,handling:3091,nitro:4065,efficiency:610},
   {name:"NSX NC1",power:585,speed:2913,acceleration:1413,handling:3313,nitro:4063,efficiency:610},
   {name:"Hot-Version N2 LEVIN",power:578,speed:2916,acceleration:1393,handling:3471,nitro:3781,efficiency:625},
+  {name:"SKYLINE GT-R \"真・赤蜻蛉\" (BNR34)",power:577,speed:3025,acceleration:1488,handling:3142,nitro:3901,efficiency:630},
   {name:"ARCHANGEL",power:574,speed:3113,acceleration:1527,handling:3146,nitro:3694,efficiency:605},
   {name:"S2000 AP1 \"真・雀蜂\"",power:574,speed:3100,acceleration:1398,handling:3126,nitro:3858,efficiency:620},
   {name:"J's RACING 魔王 S2000",power:573,speed:2833,acceleration:1553,handling:3196,nitro:3895,efficiency:625},
