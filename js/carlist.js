@@ -226,6 +226,7 @@ fiveStarsCars = [
   {name:"S2000 AP1 城島Ver. -究極コラボ-",power:521,speed:2621,acceleration:1233,handling:2612,nitro:3955,efficiency:490},
   {name:"FAIRLADY Z Z34 \"Chevalier\"",power:521,speed:2912,acceleration:1040,handling:2942,nitro:3536,efficiency:495},
   {name:"[XD]TOYOTA 86 ZN6",power:521,speed:2611,acceleration:1205,handling:2781,nitro:3827,efficiency:500,xd:true},
+  {name:"Impreza 22B-STi Version",power:521,speed:2705,acceleration:1223,handling:2807,nitro:3695,efficiency:505},
   {name:"FAIRLADY Z S30 \"悪魔のZ\"[北見チューン改]",power:521,speed:2807,acceleration:1147,handling:2507,nitro:3977,efficiency:520},
   {name:"\"悪魔のZ\"[北見チューン] -究極コラボ-",power:521,speed:2627,acceleration:1077,handling:2657,nitro:4067,efficiency:520},
   {name:"WILD GANG",power:520,speed:2577,acceleration:1400,handling:2777,nitro:3656,efficiency:480},
@@ -341,6 +342,7 @@ fiveStarsCars = [
   {name:"TOYOTA S-FR",power:488,speed:2415,acceleration:1116,handling:2536,nitro:3693,efficiency:455},
   {name:"COSMO SPORTS L10B",power:483,speed:2450,acceleration:1027,handling:2150,nitro:4035,efficiency:455},
   {name:"SKYLINE COUPE CKV36",power:481,speed:2445,acceleration:795,handling:2445,nitro:3945,efficiency:485},
+  {name:"MAZDA ROADSTER 30th Anniversary Edition",power:475,speed:2399,acceleration:966,handling:2606,nitro:3546,efficiency:430},
   {name:"ROADSTER ND5RC",power:474,speed:2396,acceleration:946,handling:2546,nitro:3596,efficiency:430},
   {name:"FUGA 370GT TypeS Y51",power:474,speed:2445,acceleration:695,handling:2345,nitro:3995,efficiency:485},
   {name:"2000GT MF10",power:467,speed:2310,acceleration:810,handling:2410,nitro:3810,efficiency:440}
@@ -348,6 +350,7 @@ fiveStarsCars = [
 sixStarsCars = [
   {name:"LFA LFA10 Nurburgring Package",power:587,speed:2965,acceleration:1630,handling:3091,nitro:4065,efficiency:610},
   {name:"NSX NC1",power:585,speed:2913,acceleration:1413,handling:3313,nitro:4063,efficiency:610},
+  {name:"911 Turbo 930 \"Walpurgis\"",power:580,speed:2912,acceleration:1504,handling:3060,nitro:4126,efficiency:635},
   {name:"Hot-Version N2 LEVIN",power:578,speed:2916,acceleration:1393,handling:3471,nitro:3781,efficiency:625},
   {name:"SKYLINE GT-R \"真・赤蜻蛉\" (BNR34)",power:577,speed:3025,acceleration:1488,handling:3142,nitro:3901,efficiency:630},
   {name:"ARCHANGEL",power:574,speed:3113,acceleration:1527,handling:3146,nitro:3694,efficiency:605},
@@ -375,6 +378,7 @@ sixStarsCars = [
   {name:"FAIRLADY Z S30 \"悪魔のZ\"[北見チューン]",power:553,speed:2727,acceleration:1277,handling:2707,nitro:4367,efficiency:620}
 ],
 sevenStarsCars = [
+  {name:"NISSAN GT-R NISMO MY20 (R35)",power:672,speed:3276,acceleration:1791,handling:3594,nitro:4791,efficiency:775},
   {name:"NISSAN GT-R (R35) 世界最速ドリフトVer.",power:665,speed:3202,acceleration:1813,handling:3599,nitro:4695,efficiency:765},
   {name:"NISSAN GT-R R35 \"不知火\"",power:665,speed:3234,acceleration:1838,handling:3514,nitro:4720,efficiency:760},
   {name:"NSX NC1 \"PHELIOS\"",power:663,speed:3303,acceleration:1953,handling:3643,nitro:4363,efficiency:755},
