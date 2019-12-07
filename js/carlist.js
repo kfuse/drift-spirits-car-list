@@ -34,6 +34,7 @@ var threeStarsCars = [
 ],
 fourStarsCars = [
   {name:"SYNCi",power:495,speed:2563,acceleration:1095,handling:2563,nitro:3680,efficiency:405},
+  {name:"JZA80 えっくす☆きゅーと",power:493,speed:2677,acceleration:1194,handling:2440,nitro:3550,efficiency:410},
   {name:"SKYLINE 2000GT-R 二階堂 2019Ver.(KPGC110)",power:492,speed:2740,acceleration:1230,handling:2396,nitro:3485,efficiency:420},
   {name:"HIRANO TIRE チェイサー初号機",power:490,speed:2742,acceleration:876,handling:2430,nitro:3757,efficiency:395},
   {name:"TRUENO 2door AE86 信司Ver.",power:490,speed:2336,acceleration:986,handling:2699,nitro:3798,efficiency:395},
@@ -188,6 +189,7 @@ fiveStarsCars = [
   {name:"Ford GT \"Heaven and Hell\"",power:528,speed:2580,acceleration:1369,handling:2810,nitro:3810,efficiency:505},
   {name:"LANCER Evolution X \"Neptune\"",power:527,speed:2863,acceleration:1283,handling:2873,nitro:3523,efficiency:495},
   {name:"GReddy 35RX spec-D'17 FinalVer.",power:527,speed:2970,acceleration:1337,handling:2687,nitro:3555,efficiency:505},
+  {name:"Rt35",power:527,speed:2664,acceleration:1261,handling:2815,nitro:3819,efficiency:515},
   {name:"SUNOCO MONSTER CORVETTE",power:526,speed:2651,acceleration:1351,handling:2986,nitro:3541,efficiency:505},
   {name:"RX-7 Type R FD3S [PROJECT.D] オーラVer.",power:526,speed:2786,acceleration:1291,handling:2661,nitro:3801,efficiency:505},
   {name:"CAMARO SS RS \"Green Monster\"",power:526,speed:3164,acceleration:988,handling:2123,nitro:4250,efficiency:520},
@@ -355,6 +357,7 @@ sixStarsCars = [
   {name:"911 Turbo 930 \"Walpurgis\"",power:580,speed:2912,acceleration:1504,handling:3060,nitro:4126,efficiency:635},
   {name:"Hot-Version N2 LEVIN",power:578,speed:2916,acceleration:1393,handling:3471,nitro:3781,efficiency:625},
   {name:"SKYLINE GT-R \"真・赤蜻蛉\" (BNR34)",power:577,speed:3025,acceleration:1488,handling:3142,nitro:3901,efficiency:630},
+  {name:"[XD]SUPRA RZ DB42",power:575,speed:2783,acceleration:1310,handling:2953,nitro:4466,efficiency:620,xd:true},
   {name:"ARCHANGEL",power:574,speed:3113,acceleration:1527,handling:3146,nitro:3694,efficiency:605},
   {name:"S2000 AP1 \"真・雀蜂\"",power:574,speed:3100,acceleration:1398,handling:3126,nitro:3858,efficiency:620},
   {name:"J's RACING 魔王 S2000",power:573,speed:2833,acceleration:1553,handling:3196,nitro:3895,efficiency:625},
