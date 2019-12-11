@@ -33,6 +33,7 @@ var threeStarsCars = [
   {name:"HIACE [北見サイクル]",power:387,speed:2088,acceleration:288,handling:1988,nitro:3388,efficiency:325}
 ],
 fourStarsCars = [
+  {name:"SUNOCO IGM MARKII",power:496,speed:2665,acceleration:1076,handling:2663,nitro:3534,efficiency:415},
   {name:"SYNCi",power:495,speed:2563,acceleration:1095,handling:2563,nitro:3680,efficiency:405},
   {name:"JZA80 えっくす☆きゅーと",power:493,speed:2677,acceleration:1194,handling:2440,nitro:3550,efficiency:410},
   {name:"SKYLINE 2000GT-R 二階堂 2019Ver.(KPGC110)",power:492,speed:2740,acceleration:1230,handling:2396,nitro:3485,efficiency:420},
@@ -192,6 +193,7 @@ fiveStarsCars = [
   {name:"Rt35",power:527,speed:2664,acceleration:1261,handling:2815,nitro:3819,efficiency:515},
   {name:"SUNOCO MONSTER CORVETTE",power:526,speed:2651,acceleration:1351,handling:2986,nitro:3541,efficiency:505},
   {name:"RX-7 Type R FD3S [PROJECT.D] オーラVer.",power:526,speed:2786,acceleration:1291,handling:2661,nitro:3801,efficiency:505},
+  {name:"D-MAX S15 SILVIA (S15)",power:526,speed:2991,acceleration:1191,handling:2723,nitro:3615,efficiency:510},
   {name:"CAMARO SS RS \"Green Monster\"",power:526,speed:3164,acceleration:988,handling:2123,nitro:4250,efficiency:520},
   {name:"FATALITA",power:525,speed:2749,acceleration:1315,handling:2976,nitro:3474,efficiency:485},
   {name:"LYZER VR386",power:525,speed:2797,acceleration:1231,handling:2955,nitro:3518,efficiency:485},
@@ -236,6 +238,7 @@ fiveStarsCars = [
   {name:"RX-8 SE3P \"松風\"",power:520,speed:2720,acceleration:1350,handling:3026,nitro:3320,efficiency:485},
   {name:"PROMESSA [20th anniv.]",power:520,speed:2584,acceleration:1211,handling:3057,nitro:3554,efficiency:490},
   {name:"SUPRA RZ JZA80 \"紅獅子\"",power:520,speed:3003,acceleration:1585,handling:2153,nitro:3665,efficiency:490},
+  {name:"SunRISE hibinojyuku S14 SILVIA (S14)",power:520,speed:2708,acceleration:1268,handling:2818,nitro:3618,efficiency:505},
   {name:"RX-7 Type R FD3S [PROJECT.D]",power:520,speed:2722,acceleration:1033,handling:2645,nitro:4001,efficiency:505},
   {name:"RX-7 FD3S [PROJECT.D] -究極コラボ-",power:520,speed:2722,acceleration:1151,handling:2645,nitro:3901,efficiency:505},
   {name:"RX-7 FC3S \"Flamberge\"",power:520,speed:2775,acceleration:1367,handling:2973,nitro:3286,efficiency:510},
@@ -352,6 +355,7 @@ fiveStarsCars = [
   {name:"2000GT MF10",power:467,speed:2310,acceleration:810,handling:2410,nitro:3810,efficiency:440}
 ],
 sixStarsCars = [
+  {name:"Team TOYO TIRES DRIFT GR Supra",power:588,speed:2712,acceleration:1359,handling:4235,nitro:3456,efficiency:635},
   {name:"LFA LFA10 Nurburgring Package",power:587,speed:2965,acceleration:1630,handling:3091,nitro:4065,efficiency:610},
   {name:"NSX NC1",power:585,speed:2913,acceleration:1413,handling:3313,nitro:4063,efficiency:610},
   {name:"911 Turbo 930 \"Walpurgis\"",power:580,speed:2912,acceleration:1504,handling:3060,nitro:4126,efficiency:635},
