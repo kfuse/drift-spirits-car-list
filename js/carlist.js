@@ -35,6 +35,7 @@ var threeStarsCars = [
 fourStarsCars = [
   {name:"SUNOCO IGM MARKII",power:496,speed:2665,acceleration:1076,handling:2663,nitro:3534,efficiency:415},
   {name:"SYNCi",power:495,speed:2563,acceleration:1095,handling:2563,nitro:3680,efficiency:405},
+  {name:"GOODRIDE ER34 SKYLINE (ER34)",power:494,speed:2518,acceleration:1129,handling:2750,nitro:3489,efficiency:400},
   {name:"JZA80 えっくす☆きゅーと",power:493,speed:2677,acceleration:1194,handling:2440,nitro:3550,efficiency:410},
   {name:"SKYLINE 2000GT-R 二階堂 2019Ver.(KPGC110)",power:492,speed:2740,acceleration:1230,handling:2396,nitro:3485,efficiency:420},
   {name:"HIRANO TIRE チェイサー初号機",power:490,speed:2742,acceleration:876,handling:2430,nitro:3757,efficiency:395},
@@ -201,6 +202,7 @@ fiveStarsCars = [
   {name:"NISSAN GT-R R35 アライズ オーラVer.",power:525,speed:2771,acceleration:1045,handling:2490,nitro:4212,efficiency:500},
   {name:"GReddy 35RX spec-D'17",power:525,speed:2951,acceleration:1323,handling:2680,nitro:3555,efficiency:500},
   {name:"CORVETTE ZR1 \"Brightest Nite\"",power:525,speed:2770,acceleration:1275,handling:2475,nitro:3980,efficiency:500},
+  {name:"Team TOYO TIRES DRIFT 180SX (RPS13)",power:525,speed:2526,acceleration:1113,handling:3206,nitro:3674,efficiency:510},
   {name:"NISMO 400R",power:525,speed:2579,acceleration:1362,handling:2811,nitro:3751,efficiency:510},
   {name:"[XD]NSX TYPE-R NA1",power:525,speed:2526,acceleration:961,handling:2791,nitro:4239,efficiency:510,xd:true},
   {name:"IMPREZA WRX STi GC8 \"Minotaurus\"",power:524,speed:2882,acceleration:1211,handling:2472,nitro:3923,efficiency:495},
@@ -251,6 +253,7 @@ fiveStarsCars = [
   {name:"FTO DE3A \"暁月\"",power:518,speed:2543,acceleration:1287,handling:2787,nitro:3745,efficiency:475},
   {name:"AMG GT S 130th Anniversary Edition",power:518,speed:2675,acceleration:1225,handling:2626,nitro:3852,efficiency:480},
   {name:"SILVIA S15 \"朧月\"",power:518,speed:2975,acceleration:1146,handling:2676,nitro:3568,efficiency:485},
+  {name:"Project μ メイクヒロタ HID信玄 Oldstar 7",power:518,speed:2634,acceleration:1324,handling:2962,nitro:3439,efficiency:490},
   {name:"MR2 GT-S SW20 \"Peacemaker\"",power:518,speed:2420,acceleration:1301,handling:2907,nitro:3742,efficiency:490},
   {name:"K'spec TONE S2000",power:518,speed:2641,acceleration:1194,handling:2945,nitro:3580,efficiency:490},
   {name:"BISARGENTO",power:518,speed:2952,acceleration:1332,handling:2373,nitro:3711,efficiency:490},
@@ -355,6 +358,7 @@ fiveStarsCars = [
   {name:"2000GT MF10",power:467,speed:2310,acceleration:810,handling:2410,nitro:3810,efficiency:440}
 ],
 sixStarsCars = [
+  {name:"GR Supra MONSTER Edition",power:590,speed:2625,acceleration:1418,handling:4346,nitro:3410,efficiency:635},
   {name:"Team TOYO TIRES DRIFT GR Supra",power:588,speed:2712,acceleration:1359,handling:4235,nitro:3456,efficiency:635},
   {name:"LFA LFA10 Nurburgring Package",power:587,speed:2965,acceleration:1630,handling:3091,nitro:4065,efficiency:610},
   {name:"NSX NC1",power:585,speed:2913,acceleration:1413,handling:3313,nitro:4063,efficiency:610},
