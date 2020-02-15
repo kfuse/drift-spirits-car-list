@@ -394,6 +394,7 @@ sixStarsCars = [
   {name:"MR2 GT-S SW20 \"Peacemaker・改\"",power:570,speed:2657,acceleration:1629,handling:3234,nitro:3884,efficiency:610},
   {name:"SILVIA \"涼月\" (S15)",power:570,speed:3068,acceleration:1478,handling:3090,nitro:3766,efficiency:620},
   {name:"GT-R NISMO R35",power:570,speed:2791,acceleration:1141,handling:3091,nitro:4391,efficiency:625},
+  {name:"718 Cayman S 982c M.ベッケンバウアーVer.",power:567,speed:2761,acceleration:1839,handling:3154,nitro:3605,efficiency:600},
   {name:"911 \"ブラックバード\"[C1ランナー] オーラVer.",power:566,speed:2979,acceleration:1333,handling:2933,nitro:4090,efficiency:600},
   {name:"911 \"ブラックバード\"[北見チューン] オーラVer.",power:566,speed:2923,acceleration:1387,handling:2993,nitro:4035,efficiency:600},
   {name:"ワタナベスーパーZ 240ZG リアルVer.(HS30)",power:566,speed:2864,acceleration:1643,handling:2823,nitro:4001,efficiency:615},
