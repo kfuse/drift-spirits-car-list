@@ -372,6 +372,7 @@ fiveStarsCars = [
 ],
 sixStarsCars = [
   {name:"GR Supra MONSTER Edition",power:590,speed:2625,acceleration:1418,handling:4346,nitro:3410,efficiency:635},
+  {name:"NSX NC1 前園和宏Ver.(CONCEPT)",power:588,speed:2962,acceleration:1462,handling:3171,nitro:4164,efficiency:610},
   {name:"Team TOYO TIRES DRIFT GR Supra",power:588,speed:2712,acceleration:1359,handling:4235,nitro:3456,efficiency:635},
   {name:"LFA LFA10 Nurburgring Package",power:587,speed:2965,acceleration:1630,handling:3091,nitro:4065,efficiency:610},
   {name:"TOYO TIRES DRIFT V386",power:587,speed:3040,acceleration:1542,handling:3290,nitro:3867,efficiency:625},
@@ -406,9 +407,11 @@ sixStarsCars = [
 ],
 sevenStarsCars = [
   {name:"NISSAN GT-R NISMO MY20 (R35)",power:672,speed:3276,acceleration:1791,handling:3594,nitro:4791,efficiency:775},
+  {name:"Huracan LP610-4 大石代吾Ver.",power:670,speed:3400,acceleration:1907,handling:3383,nitro:4709,efficiency:775},
   {name:"911 GT3 991 石神風神Ver.",power:668,speed:3446,acceleration:1930,handling:3416,nitro:4567,efficiency:770},
   {name:"NISSAN GT-R (R35) 世界最速ドリフトVer.",power:665,speed:3202,acceleration:1813,handling:3599,nitro:4695,efficiency:765},
   {name:"NISSAN GT-R R35 \"不知火\"",power:665,speed:3234,acceleration:1838,handling:3514,nitro:4720,efficiency:760},
+  {name:"NISSAN GT-R NISMO MY17 相葉瞬Ver. (R35)",power:663,speed:3223,acceleration:1802,handling:3503,nitro:4731,efficiency:750},
   {name:"NSX NC1 \"PHELIOS\"",power:663,speed:3303,acceleration:1953,handling:3643,nitro:4363,efficiency:755},
   {name:"NISSAN GT-R 50th Anniversary (R35)",power:662,speed:3272,acceleration:1672,handling:3565,nitro:4730,efficiency:760},
   {name:"NISSAN GT-R Premium edition MY20 (R35)",power:661,speed:3264,acceleration:1668,handling:3561,nitro:4727,efficiency:760},
