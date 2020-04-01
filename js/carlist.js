@@ -225,6 +225,7 @@ fiveStarsCars = [
   {name:"Team TOYO TIRES DRIFT 180SX (RPS13)",power:525,speed:2526,acceleration:1113,handling:3206,nitro:3674,efficiency:510},
   {name:"NISMO 400R",power:525,speed:2579,acceleration:1362,handling:2811,nitro:3751,efficiency:510},
   {name:"[XD]NSX TYPE-R NA1",power:525,speed:2526,acceleration:961,handling:2791,nitro:4239,efficiency:510,xd:true},
+  {name:"LANCER Evolution III \"Uranus\"",power:524,speed:2640,acceleration:906,handling:2802,nitro:4151,efficiency:485},
   {name:"IMPREZA WRX STi GC8 \"Minotaurus\"",power:524,speed:2882,acceleration:1211,handling:2472,nitro:3923,efficiency:495},
   {name:"SKYLINE GT-R BNR32 死神Ver.",power:524,speed:2808,acceleration:1198,handling:2688,nitro:3788,efficiency:495},
   {name:"CIVIC TYPE-R FK8",power:524,speed:2606,acceleration:1286,handling:2866,nitro:3734,efficiency:510},
