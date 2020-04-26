@@ -402,6 +402,7 @@ sixStarsCars = [
   {name:"SKYLINE GT-R \"真・赤蜻蛉\" (BNR34)",power:577,speed:3025,acceleration:1488,handling:3142,nitro:3901,efficiency:630},
   {name:"[XD]SUPRA RZ DB42",power:575,speed:2783,acceleration:1310,handling:2953,nitro:4466,efficiency:620,xd:true},
   {name:"ARCHANGEL",power:574,speed:3113,acceleration:1527,handling:3146,nitro:3694,efficiency:605},
+  {name:"GTO Z16A \"村正・真打\"",power:574,speed:2790,acceleration:1222,handling:3220,nitro:4247,efficiency:610},
   {name:"S2000 AP1 \"真・雀蜂\"",power:574,speed:3100,acceleration:1398,handling:3126,nitro:3858,efficiency:620},
   {name:"J's RACING 魔王 S2000",power:573,speed:2833,acceleration:1553,handling:3196,nitro:3895,efficiency:625},
   {name:"FAIRLADY Z Version NISMO Type 380RS-Competition (Z33)",power:573,speed:3037,acceleration:1537,handling:3037,nitro:3867,efficiency:630},
@@ -411,6 +412,7 @@ sixStarsCars = [
   {name:"Aventador LP700-4",power:571,speed:2974,acceleration:1484,handling:2954,nitro:4014,efficiency:605},
   {name:"SEEKER FD2",power:571,speed:2906,acceleration:1534,handling:3078,nitro:3909,efficiency:615},
   {name:"ドリキンAE86ストリート号",power:570,speed:2856,acceleration:1381,handling:3462,nitro:3705,efficiency:605},
+  {name:"GTO Z16A \"村正・影打\"",power:570,speed:2914,acceleration:1261,handling:2771,nitro:4473,efficiency:610},
   {name:"MR2 GT-S SW20 \"Peacemaker・改\"",power:570,speed:2657,acceleration:1629,handling:3234,nitro:3884,efficiency:610},
   {name:"SILVIA \"涼月\" (S15)",power:570,speed:3068,acceleration:1478,handling:3090,nitro:3766,efficiency:620},
   {name:"GT-R NISMO R35",power:570,speed:2791,acceleration:1141,handling:3091,nitro:4391,efficiency:625},
@@ -427,6 +429,7 @@ sixStarsCars = [
   {name:"FAIRLADY Z S30 \"悪魔のZ\"[北見チューン]",power:553,speed:2727,acceleration:1277,handling:2707,nitro:4367,efficiency:620}
 ],
 sevenStarsCars = [
+  {name:"CORVETTE C7 ZR1 ZTK Track Performance Package",power:674,speed:3458,acceleration:2078,handling:3444,nitro:4499,efficiency:780},
   {name:"NISSAN GT-R NISMO MY20 (R35)",power:672,speed:3276,acceleration:1791,handling:3594,nitro:4791,efficiency:775},
   {name:"Huracan LP610-4 大石代吾Ver.",power:670,speed:3400,acceleration:1907,handling:3383,nitro:4709,efficiency:775},
   {name:"911 GT3 991 石神風神Ver.",power:668,speed:3446,acceleration:1930,handling:3416,nitro:4567,efficiency:770},
