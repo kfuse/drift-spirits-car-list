@@ -35,6 +35,7 @@ var threeStarsCars = [
 ],
 fourStarsCars = [
   {name:"SUNOCO IGM MARKII",power:496,speed:2665,acceleration:1076,handling:2663,nitro:3534,efficiency:415},
+  {name:"塚本奈々美 S14ストリート号 (S14)",power:495,speed:2588,acceleration:1072,handling:2675,nitro:3584,efficiency:400},
   {name:"SYNCi",power:495,speed:2563,acceleration:1095,handling:2563,nitro:3680,efficiency:405},
   {name:"GOODRIDE ER34 SKYLINE (ER34)",power:494,speed:2518,acceleration:1129,handling:2750,nitro:3489,efficiency:400},
   {name:"JZA80 えっくす☆きゅーと",power:493,speed:2677,acceleration:1194,handling:2440,nitro:3550,efficiency:410},
@@ -200,6 +201,7 @@ fiveStarsCars = [
   {name:"JUKE-R 2.0",power:531,speed:2672,acceleration:1071,handling:2706,nitro:4171,efficiency:505},
   {name:"OTG 86",power:531,speed:2820,acceleration:1287,handling:3044,nitro:3470,efficiency:510},
   {name:"FAIRLADY Z \"黒鷺\" (S30)",power:531,speed:2825,acceleration:1283,handling:2987,nitro:3525,efficiency:515},
+  {name:"AUTO PRODUCE BOSS WRX",power:528,speed:2833,acceleration:1176,handling:2879,nitro:3671,efficiency:500},
   {name:"Ford GT \"Heaven and Hell\"",power:528,speed:2580,acceleration:1369,handling:2810,nitro:3810,efficiency:505},
   {name:"LANCER Evolution X \"Neptune\"",power:527,speed:2863,acceleration:1283,handling:2873,nitro:3523,efficiency:495},
   {name:"718 Cayman S 982c M.ベッケンバウアーVer.",power:527,speed:2561,acceleration:1639,handling:2954,nitro:3405,efficiency:500},
