@@ -230,9 +230,11 @@ fiveStarsCars = [
   {name:"NISMO 400R",power:525,speed:2579,acceleration:1362,handling:2811,nitro:3751,efficiency:510},
   {name:"[XD]NSX TYPE-R NA1",power:525,speed:2526,acceleration:961,handling:2791,nitro:4239,efficiency:510,xd:true},
   {name:"LANCER Evolution III \"Uranus\"",power:524,speed:2640,acceleration:906,handling:2802,nitro:4151,efficiency:485},
+  {name:"LEG MOTOR SPORT RX-8",power:524,speed:2620,acceleration:1230,handling:2826,nitro:3803,efficiency:495},
   {name:"IMPREZA WRX STi GC8 \"Minotaurus\"",power:524,speed:2882,acceleration:1211,handling:2472,nitro:3923,efficiency:495},
   {name:"SKYLINE GT-R BNR32 死神Ver.",power:524,speed:2808,acceleration:1198,handling:2688,nitro:3788,efficiency:495},
   {name:"CIVIC TYPE-R FK8",power:524,speed:2606,acceleration:1286,handling:2866,nitro:3734,efficiency:510},
+  {name:"Techno PRO Spirit MR-S",power:523,speed:2726,acceleration:1355,handling:2946,nitro:3432,efficiency:490},
   {name:"IMPREZA S203",power:523,speed:2667,acceleration:1223,handling:2807,nitro:3782,efficiency:490},
   {name:"S15 NOB SPECIAL",power:523,speed:2975,acceleration:1199,handling:2734,nitro:3568,efficiency:490},
   {name:"911 Carrera GTS 991 J.テイラーVer.",power:523,speed:2608,acceleration:1245,handling:2740,nitro:3866,efficiency:495},
@@ -431,6 +433,7 @@ sixStarsCars = [
   {name:"FAIRLADY Z S30 \"悪魔のZ\"[北見チューン]",power:553,speed:2727,acceleration:1277,handling:2707,nitro:4367,efficiency:620}
 ],
 sevenStarsCars = [
+  {name:"Mine's NISSAN GT-R MY11 (R35)",power:665,speed:3205,acceleration:2115,handling:3595,nitro:4384,efficiency:760},
   {name:"CORVETTE C7 ZR1 ZTK Track Performance Package",power:674,speed:3458,acceleration:2078,handling:3444,nitro:4499,efficiency:780},
   {name:"NISSAN GT-R NISMO MY20 (R35)",power:672,speed:3276,acceleration:1791,handling:3594,nitro:4791,efficiency:775},
   {name:"Huracan LP610-4 大石代吾Ver.",power:670,speed:3400,acceleration:1907,handling:3383,nitro:4709,efficiency:775},
