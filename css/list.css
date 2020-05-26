@@ -49,6 +49,10 @@ a {
     border-bottom: 1px solid #eee;
     color: #666;
 }
+.tableWrapper {
+  width: 100%;
+  overflow-x: scroll;
+}
 .titleStar {
     padding: 10px;
     border-left: 4px solid #5d8596;
@@ -332,7 +336,7 @@ a {
     position: fixed;
     z-index: 2;
     top: 25%;
-    margin: 0 10px;
+    margin: 0 auto;
     padding: 10px;
     background: #fff;
 }
@@ -376,6 +380,7 @@ a {
     }
     .modalBox {
         top: 10%;
+        width: 90vw;
     }
 }
 @media screen and (max-width: 412px) {
