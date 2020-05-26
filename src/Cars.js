@@ -927,7 +927,7 @@ class List {
         specs = {engine:0, transmission:0, tire:0, nitro:0, ecu:0, free1:0, free2:0},
         free = {towerbar:0, suspension:0, clutch:0, shaft:0, muffler:0, turbine:0};
     for (key in parts) {
-      if (parts[key].size == 0) break;
+      if (parts[key].size == 0) continue;
       if (key === "ecu") {
         specs[key] = (parseInt(parts[key].size, 10)) * 5 + (parseInt(parts[key].level, 10) - 1);
       } else if (key.match(/free/)) {
@@ -937,8 +937,17 @@ class List {
           coefficient = 3;
         }
         free[parts[key].selected] += (parseInt(parts[key].size, 10) - 1) * coefficient + parseInt(parts[key].level, 10) * coefficient;
+        if (parseInt(parts[key].size, 10) === 13) {
+          free[parts[key].selected] += 91;
+        }
       } else {
+        // speed, acceleration, handling, nitro
         specs[key] = (parseInt(parts[key].size, 10) - 1) * 5 + parseInt(parts[key].level, 10) * 5;
+        if (parseInt(parts[key].size, 10) === 21) {
+          specs[key] += 105;
+        } else if (parseInt(parts[key].size, 10) === 22) {
+          specs[key] += 110;
+        }
       }
     }
     for (i = 0; i < carLevel; i++) {
