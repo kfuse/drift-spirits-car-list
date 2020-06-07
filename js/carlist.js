@@ -153,6 +153,7 @@ fourStarsCars = [
   {name:"CHASER JZX100 -爆加-",power:466,speed:2306,acceleration:956,handling:2406,nitro:3656,efficiency:405},
   {name:"SUPRA RZ JZA80",power:466,speed:2306,acceleration:706,handling:2406,nitro:3906,efficiency:410},
   {name:"スーパーぽち メイクヒロタ RSワタナベ ロードスター",power:465,speed:2399,acceleration:988,handling:2344,nitro:3572,efficiency:365},
+  {name:"SOARER 2.5GT-TWINTURBO JZZ30",power:465,speed:2336,acceleration:818,handling:2317,nitro:3848,efficiency:370},
   {name:"AE86 頭文字D-夢現- Ver.",power:465,speed:2222,acceleration:716,handling:2723,nitro:3652,efficiency:375},
   {name:"SKYLINE GT-R BNR34 -爆エコ-",power:465,speed:2291,acceleration:641,handling:2486,nitro:3886,efficiency:380},
   {name:"SPORTS800 女暴小町Ver.",power:464,speed:2298,acceleration:898,handling:2298,nitro:3798,efficiency:365},
@@ -318,6 +319,7 @@ fiveStarsCars = [
   {name:"GT-R R34 アライズ7号 -究極コラボ-",power:515,speed:2781,acceleration:958,handling:2763,nitro:3808,efficiency:505},
   {name:"WISTERIA 180SX",power:514,speed:2212,acceleration:973,handling:3471,nitro:3633,efficiency:480},
   {name:"[XD]LANCER Evolution III CE9A",power:514,speed:2449,acceleration:1027,handling:2655,nitro:4155,efficiency:495,xd:true},
+  {name:"[XD]CAPPUCCINO EA11R",power:513,speed:2650,acceleration:1249,handling:2755,nitro:3605,efficiency:480,xd:true},
   {name:"GT-R R34 アライズ7号",power:513,speed:2761,acceleration:938,handling:2743,nitro:3828,efficiency:505},
   {name:"VIPER SRT10",power:513,speed:2604,acceleration:1254,handling:2504,nitro:3904,efficiency:530},
   {name:"チャンプ モンスター RX-7 SA22C",power:513,speed:3000,acceleration:1380,handling:2100,nitro:3780,efficiency:600},
@@ -434,6 +436,7 @@ sixStarsCars = [
   {name:"FAIRLADY Z S30 \"悪魔のZ\"[北見チューン]",power:553,speed:2727,acceleration:1277,handling:2707,nitro:4367,efficiency:620}
 ],
 sevenStarsCars = [
+  {name:"LANCER Evolution IX \"BlackSwan\" Gold Edition",power:640,speed:3255,acceleration:1823,handling:3255,nitro:4466,efficiency:760},
   {name:"Mine's NISSAN GT-R MY11 (R35)",power:665,speed:3205,acceleration:2115,handling:3595,nitro:4384,efficiency:760},
   {name:"CORVETTE C7 ZR1 ZTK Track Performance Package",power:674,speed:3458,acceleration:2078,handling:3444,nitro:4499,efficiency:780},
   {name:"NISSAN GT-R NISMO MY20 (R35)",power:672,speed:3276,acceleration:1791,handling:3594,nitro:4791,efficiency:775},
