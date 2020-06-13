@@ -404,6 +404,7 @@ sixStarsCars = [
   {name:"LFA LFA10 Nurburgring Package",power:587,speed:2965,acceleration:1630,handling:3091,nitro:4065,efficiency:610},
   {name:"TOYO TIRES DRIFT V386",power:587,speed:3040,acceleration:1542,handling:3290,nitro:3867,efficiency:625},
   {name:"NSX NC1",power:585,speed:2913,acceleration:1413,handling:3313,nitro:4063,efficiency:610},
+  {name:"NSX TYPE-R NA1 \"La Pucelle\"",power:580,speed:3066,acceleration:1480,handling:3049,nitro:4024,efficiency:615},
   {name:"911 Turbo 930 \"Walpurgis\"",power:580,speed:2912,acceleration:1504,handling:3060,nitro:4126,efficiency:635},
   {name:"Hot-Version N2 LEVIN",power:578,speed:2916,acceleration:1393,handling:3471,nitro:3781,efficiency:625},
   {name:"SKYLINE GT-R \"真・赤蜻蛉\" (BNR34)",power:577,speed:3025,acceleration:1488,handling:3142,nitro:3901,efficiency:630},
