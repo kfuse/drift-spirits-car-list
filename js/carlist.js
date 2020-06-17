@@ -221,6 +221,7 @@ fiveStarsCars = [
   {name:"CAMARO SS RS \"Green Monster\"",power:526,speed:3164,acceleration:988,handling:2123,nitro:4250,efficiency:520},
   {name:"FATALITA",power:525,speed:2749,acceleration:1315,handling:2976,nitro:3474,efficiency:485},
   {name:"LYZER VR386",power:525,speed:2797,acceleration:1231,handling:2955,nitro:3518,efficiency:485},
+  {name:"Panamera Turbo Executive",power:525,speed:2724,acceleration:1347,handling:2692,nitro:3756,efficiency:490},
   {name:"CIVIC MUGEN RR",power:525,speed:2647,acceleration:1247,handling:2847,nitro:3758,efficiency:490},
   {name:"130R YOKOHAMA SUPRA",power:525,speed:2556,acceleration:1390,handling:2974,nitro:3589,efficiency:495},
   {name:"AMG GT S 大谷洋介Ver.",power:525,speed:2714,acceleration:1265,handling:2665,nitro:3855,efficiency:500},
