@@ -422,6 +422,7 @@ sixStarsCars = [
   {name:"NISSAN GT-R R35 \"Tachyon\"",power:573,speed:2861,acceleration:1401,handling:2851,nitro:4351,efficiency:630},
   {name:"FAIRLADY Z S30 -Version 735-'19",power:572,speed:2835,acceleration:1280,handling:3710,nitro:3624,efficiency:610},
   {name:"FEED 魔王 FD3S",power:572,speed:2806,acceleration:1532,handling:2956,nitro:4148,efficiency:620},
+  {name:"Huracan LP610-4",power:571,speed:2828,acceleration:1457,handling:2916,nitro:4218,efficiency:595},
   {name:"Aventador LP700-4",power:571,speed:2974,acceleration:1484,handling:2954,nitro:4014,efficiency:605},
   {name:"SEEKER FD2",power:571,speed:2906,acceleration:1534,handling:3078,nitro:3909,efficiency:615},
   {name:"ドリキンAE86ストリート号",power:570,speed:2856,acceleration:1381,handling:3462,nitro:3705,efficiency:605},
