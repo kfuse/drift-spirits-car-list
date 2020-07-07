@@ -225,6 +225,7 @@ fiveStarsCars = [
   {name:"LYZER VR386",power:525,speed:2797,acceleration:1231,handling:2955,nitro:3518,efficiency:485},
   {name:"Panamera Turbo Executive",power:525,speed:2724,acceleration:1347,handling:2692,nitro:3756,efficiency:490},
   {name:"CIVIC MUGEN RR",power:525,speed:2647,acceleration:1247,handling:2847,nitro:3758,efficiency:490},
+  {name:"SKYLINE 400R (RV37)",power:525,speed:2683,acceleration:1453,handling:2797,nitro:3586,efficiency:495},
   {name:"130R YOKOHAMA SUPRA",power:525,speed:2556,acceleration:1390,handling:2974,nitro:3589,efficiency:495},
   {name:"AMG GT S 大谷洋介Ver.",power:525,speed:2714,acceleration:1265,handling:2665,nitro:3855,efficiency:500},
   {name:"NISSAN GT-R R35 アライズ オーラVer.",power:525,speed:2771,acceleration:1045,handling:2490,nitro:4212,efficiency:500},
