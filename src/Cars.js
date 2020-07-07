@@ -64,6 +64,11 @@ class Cars {
             ],
             size: 1,
             level: 1
+          },
+          nakama: {
+            speed: 0,
+            acceleration: 0,
+            handling: 0
           }
         },
         isAppliedParts: false,
@@ -120,13 +125,24 @@ class Cars {
         toggleParts: function(e) {
           Util.preventDefault(e);
           var partsContainer = document.getElementById(this.id + "Parts");
+          var parts;
           if (partsContainer.className.match(/close/)) {
             partsContainer.className = partsContainer.className.replace(/close/g, "");
             e.target.className += " iconOpened";
             this.isAppliedParts = true;
             if (localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel") !== null) {
               this.carLevel = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel"));
-              this.parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              this.parts.engine = parts.engine;
+              this.parts.transmission = parts.transmission;
+              this.parts.tire = parts.tire;
+              this.parts.nitro = parts.nitro;
+              this.parts.ecu = parts.ecu;
+              this.parts.free1 = parts.free1;
+              this.parts.free2 = parts.free2;
+              if (parts.nakama) {
+                this.parts.nakama = parts.nakama;
+              }
             }
             List.updateParts({
               cars: this.cars,
@@ -226,6 +242,11 @@ class Cars {
             ],
             size: 1,
             level: 1
+          },
+          nakama: {
+            speed: 0,
+            acceleration: 0,
+            handling: 0
           }
         },
         isAppliedParts: false,
@@ -282,13 +303,24 @@ class Cars {
         toggleParts: function(e) {
           Util.preventDefault(e);
           var partsContainer = document.getElementById(this.id + "Parts");
+          var parts;
           if (partsContainer.className.match(/close/)) {
             partsContainer.className = partsContainer.className.replace(/close/g, "");
             e.target.className += " iconOpened";
             this.isAppliedParts = true;
             if (localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel") !== null) {
               this.carLevel = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel"));
-              this.parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              this.parts.engine = parts.engine;
+              this.parts.transmission = parts.transmission;
+              this.parts.tire = parts.tire;
+              this.parts.nitro = parts.nitro;
+              this.parts.ecu = parts.ecu;
+              this.parts.free1 = parts.free1;
+              this.parts.free2 = parts.free2;
+              if (parts.nakama) {
+                this.parts.nakama = parts.nakama;
+              }
             }
             List.updateParts({
               cars: this.cars,
@@ -388,6 +420,11 @@ class Cars {
             ],
             size: 1,
             level: 1
+          },
+          nakama: {
+            speed: 0,
+            acceleration: 0,
+            handling: 0
           }
         },
         isAppliedParts: false,
@@ -444,13 +481,24 @@ class Cars {
         toggleParts: function(e) {
           Util.preventDefault(e);
           var partsContainer = document.getElementById(this.id + "Parts");
+          var parts;
           if (partsContainer.className.match(/close/)) {
             partsContainer.className = partsContainer.className.replace(/close/g, "");
             e.target.className += " iconOpened";
             this.isAppliedParts = true;
             if (localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel") !== null) {
               this.carLevel = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel"));
-              this.parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              this.parts.engine = parts.engine;
+              this.parts.transmission = parts.transmission;
+              this.parts.tire = parts.tire;
+              this.parts.nitro = parts.nitro;
+              this.parts.ecu = parts.ecu;
+              this.parts.free1 = parts.free1;
+              this.parts.free2 = parts.free2;
+              if (parts.nakama) {
+                this.parts.nakama = parts.nakama;
+              }
             }
             List.updateParts({
               cars: this.cars,
@@ -550,6 +598,11 @@ class Cars {
             ],
             size: 1,
             level: 1
+          },
+          nakama: {
+            speed: 0,
+            acceleration: 0,
+            handling: 0
           }
         },
         isAppliedParts: false,
@@ -606,13 +659,24 @@ class Cars {
         toggleParts: function(e) {
           Util.preventDefault(e);
           var partsContainer = document.getElementById(this.id + "Parts");
+          var parts;
           if (partsContainer.className.match(/close/)) {
             partsContainer.className = partsContainer.className.replace(/close/g, "");
             e.target.className += " iconOpened";
             this.isAppliedParts = true;
             if (localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel") !== null) {
               this.carLevel = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel"));
-              this.parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              this.parts.engine = parts.engine;
+              this.parts.transmission = parts.transmission;
+              this.parts.tire = parts.tire;
+              this.parts.nitro = parts.nitro;
+              this.parts.ecu = parts.ecu;
+              this.parts.free1 = parts.free1;
+              this.parts.free2 = parts.free2;
+              if (parts.nakama) {
+                this.parts.nakama = parts.nakama;
+              }
             }
             List.updateParts({
               cars: this.cars,
@@ -712,6 +776,11 @@ class Cars {
             ],
             size: 1,
             level: 1
+          },
+          nakama: {
+            speed: 0,
+            acceleration: 0,
+            handling: 0
           }
         },
         isAppliedParts: false,
@@ -751,13 +820,24 @@ class Cars {
         toggleParts: function(e) {
           Util.preventDefault(e);
           var partsContainer = document.getElementById(this.id + "Parts");
+          var parts;
           if (partsContainer.className.match(/close/)) {
             partsContainer.className = partsContainer.className.replace(/close/g, "");
             e.target.className += " iconOpened";
             this.isAppliedParts = true;
             if (localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel") !== null) {
               this.carLevel = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.carLevel"));
-              this.parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              parts = JSON.parse(localStorage.getItem("content.driftspirits.car.list." + this.stars + "stars.parts"));
+              this.parts.engine = parts.engine;
+              this.parts.transmission = parts.transmission;
+              this.parts.tire = parts.tire;
+              this.parts.nitro = parts.nitro;
+              this.parts.ecu = parts.ecu;
+              this.parts.free1 = parts.free1;
+              this.parts.free2 = parts.free2;
+              if (parts.nakama) {
+                this.parts.nakama = parts.nakama;
+              }
             }
             List.updateParts({
               cars: this.cars,
@@ -925,7 +1005,15 @@ class List {
         carLevelRotation = ["engine", "tire", "transmission", "nitro", "ecu"];
         rotationIndex = 0,
         specs = {engine:0, transmission:0, tire:0, nitro:0, ecu:0, free1:0, free2:0},
-        free = {towerbar:0, suspension:0, clutch:0, shaft:0, muffler:0, turbine:0};
+        free = {towerbar:0, suspension:0, clutch:0, shaft:0, muffler:0, turbine:0},
+        nakama = {speed:0, acceleration:0, handling:0};
+    if (parts && typeof parts.nakama === "undefined") {
+      parts.nakama = {
+        speed: 0,
+        acceleration: 0,
+        handling: 0
+      };
+    }
     for (key in parts) {
       if (parts[key].size == 0) continue;
       if (key === "ecu") {
@@ -940,6 +1028,10 @@ class List {
         if (parseInt(parts[key].size, 10) === 13) {
           free[parts[key].selected] += 91;
         }
+      } else if (key.match(/nakama/)) {
+        nakama.speed        = parseInt(parts.nakama.speed, 10);
+        nakama.acceleration = parseInt(parts.nakama.acceleration, 10);
+        nakama.handling     = parseInt(parts.nakama.handling, 10);
       } else {
         // speed, acceleration, handling, nitro
         specs[key] = (parseInt(parts[key].size, 10) - 1) * 5 + parseInt(parts[key].level, 10) * 5;
@@ -965,16 +1057,16 @@ class List {
     }
     for (i = 0; i < cars.length; i++) {
       if (mode === "set") {
-        cars[i].speed = originalCars[i].speed + specs["engine"] + free["muffler"] + free["turbine"];
-        cars[i].acceleration = originalCars[i].acceleration + specs["transmission"] + free["clutch"] + free["shaft"];
-        cars[i].handling = originalCars[i].handling + specs["tire"] + free["towerbar"] + free["suspension"];
+        cars[i].speed = originalCars[i].speed + specs["engine"] + free["muffler"] + free["turbine"] + nakama["speed"];
+        cars[i].acceleration = originalCars[i].acceleration + specs["transmission"] + free["clutch"] + free["shaft"] + nakama["acceleration"];
+        cars[i].handling = originalCars[i].handling + specs["tire"] + free["towerbar"] + free["suspension"] + nakama["handling"];
         cars[i].nitro = originalCars[i].nitro + specs["nitro"];
         cars[i].efficiency = originalCars[i].efficiency - specs["ecu"];
         cars[i].power = Math.floor((cars[i].speed + cars[i].acceleration + cars[i].handling + cars[i].nitro) / 20);
       } else {
-        cars[i].speed = originalCars[i].speed - specs["engine"] - free["muffler"] - free["turbine"];
-        cars[i].acceleration = originalCars[i].acceleration - specs["transmission"] - free["clutch"] - free["shaft"];
-        cars[i].handling = originalCars[i].handling - specs["tire"] - free["towerbar"] - free["suspension"];
+        cars[i].speed = originalCars[i].speed - specs["engine"] - free["muffler"] - free["turbine"] - nakama["speed"];
+        cars[i].acceleration = originalCars[i].acceleration - specs["transmission"] - free["clutch"] - free["shaft"] - nakama["acceleration"];
+        cars[i].handling = originalCars[i].handling - specs["tire"] - free["towerbar"] - free["suspension"] - nakama["handling"];
         cars[i].nitro = originalCars[i].nitro - specs["nitro"];
         cars[i].efficiency = originalCars[i].efficiency + specs["ecu"];
         cars[i].power = Math.floor((cars[i].speed + cars[i].acceleration + cars[i].handling + cars[i].nitro) / 20);
