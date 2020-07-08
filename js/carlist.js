@@ -103,6 +103,7 @@ fourStarsCars = [
   {name:"TOYO TIRES DRIFT S15 SILVIA'15",power:478,speed:2412,acceleration:722,handling:2521,nitro:3922,efficiency:410},
   {name:"CHARGER SRT8",power:478,speed:2417,acceleration:1117,handling:2117,nitro:3917,efficiency:440},
   {name:"FLATレーシング/SKYLINE R33",power:478,speed:2431,acceleration:931,handling:2131,nitro:4081,efficiency:465},
+  {name:"FAIRLADY Z -Version 735- (HZ31)",power:477,speed:2492,acceleration:1011,handling:3490,nitro:3460,efficiency:375},
   {name:"EXEDY HID信玄 H.D.O NA6CE",power:477,speed:2428,acceleration:1076,handling:2475,nitro:3570,efficiency:390},
   {name:"紫電改 ハイパーソアラ Z10",power:477,speed:2404,acceleration:854,handling:2384,nitro:3904,efficiency:405},
   {name:"Focus RS",power:477,speed:2420,acceleration:920,handling:2418,nitro:3801,efficiency:405},
