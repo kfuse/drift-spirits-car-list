@@ -203,6 +203,7 @@ fiveStarsCars = [
   {name:"VIPER SRT10 \"Jormungand\"",power:533,speed:2788,acceleration:1393,handling:2756,nitro:3740,efficiency:525},
   {name:"PAC-MAN[RIDGE RACER 7Ver.]",power:532,speed:2811,acceleration:1386,handling:2946,nitro:3516,efficiency:500},
   {name:"FAIRLADY Z S30 \"日向\"",power:532,speed:2635,acceleration:1080,handling:3510,nitro:3424,efficiency:510},
+  {name:"SPRINTER TRUENO AE86 \"Ifrit\"",power:531,speed:2960,acceleration:1083,handling:3028,nitro:3548,efficiency:500},
   {name:"JUKE-R 2.0",power:531,speed:2672,acceleration:1071,handling:2706,nitro:4171,efficiency:505},
   {name:"OTG 86",power:531,speed:2820,acceleration:1287,handling:3044,nitro:3470,efficiency:510},
   {name:"FAIRLADY Z \"黒鷺\" (S30)",power:531,speed:2825,acceleration:1283,handling:2987,nitro:3525,efficiency:515},
