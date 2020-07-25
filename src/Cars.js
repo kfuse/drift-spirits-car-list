@@ -77,7 +77,18 @@ class Cars {
       computed: {
         filteredCars: function() {
           var self = this,
-              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+              text = this.filteringText,
+              regExp;
+          text = text.trim().replace(/ /g, '|');
+          text = text.replace(/\\/g, '');
+          text = text.replace(/\[/g, '\\[');
+          text = text.replace(/\]/g, '\\]');
+          text = text.replace(/\(/g, '\\(');
+          text = text.replace(/\)/g, '\\)');
+          text = text.replace(/\*/g, '\\*');
+          text = text.replace(/\+/g, '\\+');
+          text = text.replace(/\?/g, '\\?');
+          regExp= new RegExp(text, 'i');
           return self.cars.filter( function(car) {
             return car.name.match(regExp) !== null;
           });
@@ -255,7 +266,18 @@ class Cars {
       computed: {
         filteredCars: function() {
           var self = this,
-              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+              text = this.filteringText,
+              regExp;
+          text = text.trim().replace(/ /g, '|');
+          text = text.replace(/\\/g, '');
+          text = text.replace(/\[/g, '\\[');
+          text = text.replace(/\]/g, '\\]');
+          text = text.replace(/\(/g, '\\(');
+          text = text.replace(/\)/g, '\\)');
+          text = text.replace(/\*/g, '\\*');
+          text = text.replace(/\+/g, '\\+');
+          text = text.replace(/\?/g, '\\?');
+          regExp= new RegExp(text, 'i');
           return self.cars.filter( function(car) {
             return car.name.match(regExp) !== null;
           });
@@ -433,7 +455,18 @@ class Cars {
       computed: {
         filteredCars: function() {
           var self = this,
-              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+              text = this.filteringText,
+              regExp;
+          text = text.trim().replace(/ /g, '|');
+          text = text.replace(/\\/g, '');
+          text = text.replace(/\[/g, '\\[');
+          text = text.replace(/\]/g, '\\]');
+          text = text.replace(/\(/g, '\\(');
+          text = text.replace(/\)/g, '\\)');
+          text = text.replace(/\*/g, '\\*');
+          text = text.replace(/\+/g, '\\+');
+          text = text.replace(/\?/g, '\\?');
+          regExp= new RegExp(text, 'i');
           return self.cars.filter( function(car) {
             return car.name.match(regExp) !== null;
           });
@@ -611,7 +644,18 @@ class Cars {
       computed: {
         filteredCars: function() {
           var self = this,
-              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+              text = this.filteringText,
+              regExp;
+          text = text.trim().replace(/ /g, '|');
+          text = text.replace(/\\/g, '');
+          text = text.replace(/\[/g, '\\[');
+          text = text.replace(/\]/g, '\\]');
+          text = text.replace(/\(/g, '\\(');
+          text = text.replace(/\)/g, '\\)');
+          text = text.replace(/\*/g, '\\*');
+          text = text.replace(/\+/g, '\\+');
+          text = text.replace(/\?/g, '\\?');
+          regExp= new RegExp(text, 'i');
           return self.cars.filter( function(car) {
             return car.name.match(regExp) !== null;
           });
@@ -789,7 +833,18 @@ class Cars {
       computed: {
         filteredCars: function() {
           var self = this,
-              regExp = new RegExp(this.filteringText.trim().replace(/ /g, '|'), 'i');
+              text = this.filteringText,
+              regExp;
+          text = text.trim().replace(/ /g, '|');
+          text = text.replace(/\\/g, '');
+          text = text.replace(/\[/g, '\\[');
+          text = text.replace(/\]/g, '\\]');
+          text = text.replace(/\(/g, '\\(');
+          text = text.replace(/\)/g, '\\)');
+          text = text.replace(/\*/g, '\\*');
+          text = text.replace(/\+/g, '\\+');
+          text = text.replace(/\?/g, '\\?');
+          regExp= new RegExp(text, 'i');
           return self.cars.filter( function(car) {
             return car.name.match(regExp) !== null;
           });
