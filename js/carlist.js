@@ -208,6 +208,7 @@ fiveStarsCars = [
   {name:"JUKE-R 2.0",power:531,speed:2672,acceleration:1071,handling:2706,nitro:4171,efficiency:505},
   {name:"OTG 86",power:531,speed:2820,acceleration:1287,handling:3044,nitro:3470,efficiency:510},
   {name:"FAIRLADY Z \"黒鷺\" (S30)",power:531,speed:2825,acceleration:1283,handling:2987,nitro:3525,efficiency:515},
+  {name:"SILVIA K's \"Nightmare\" (S13)",power:529,speed:2769,acceleration:1343,handling:2930,nitro:3557,efficiency:500},
   {name:"RC410 \"Ritsuko\"SP",power:528,speed:2911,acceleration:1301,handling:2911,nitro:3436,efficiency:495},
   {name:"AUTO PRODUCE BOSS WRX",power:528,speed:2833,acceleration:1176,handling:2879,nitro:3671,efficiency:500},
   {name:"Ford GT \"Heaven and Hell\"",power:528,speed:2580,acceleration:1369,handling:2810,nitro:3810,efficiency:505},
