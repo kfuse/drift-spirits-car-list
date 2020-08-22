@@ -195,6 +195,7 @@ fourStarsCars = [
   {name:"SAVANNA RX-7 SA22C",power:444,speed:2221,acceleration:621,handling:2421,nitro:3621,efficiency:400},
   {name:"ALCYONE SVX CXD",power:442,speed:2277,acceleration:627,handling:2177,nitro:3777,efficiency:420},
   {name:"FAIRLADY Z 240ZG (HS30)",power:439,speed:2223,acceleration:782,handling:2341,nitro:3451,efficiency:335},
+  {name:"ROADSTER NA6CE",power:438,speed:2205,acceleration:725,handling:2422,nitro:3427,efficiency:335},
   {name:"COPEN Robe LA400K",power:435,speed:2147,acceleration:697,handling:2117,nitro:3747,efficiency:365},
   {name:"SPORTS800 UP15",power:430,speed:2153,acceleration:653,handling:2153,nitro:3653,efficiency:345}
 ],
