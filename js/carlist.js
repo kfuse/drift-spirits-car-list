@@ -118,6 +118,7 @@ fourStarsCars = [
   {name:"SKYLINE GT-R BNR32 -爆高-",power:476,speed:2506,acceleration:656,handling:2506,nitro:3856,efficiency:420},
   {name:"14R ZN6",power:475,speed:2383,acceleration:933,handling:2683,nitro:3503,efficiency:385},
   {name:"TCP MAGIC RX-7",power:474,speed:2320,acceleration:948,handling:2435,nitro:3785,efficiency:395},
+  {name:"S660 JW5 [ファミスタ Ver.]",power:473,speed:2286,acceleration:1557,handling:2589,nitro:3047,efficiency:365},
   {name:"RX-7 FC3S 擬音Ver.",power:473,speed:2390,acceleration:742,handling:2611,nitro:3736,efficiency:380},
   {name:"MR-S ZZW30",power:473,speed:2352,acceleration:852,handling:2402,nitro:3857,efficiency:395},
   {name:"SKYLINE GT-R BCNR33 [3rd anniv.]",power:473,speed:2436,acceleration:801,handling:2496,nitro:3736,efficiency:395},
