@@ -26,6 +26,7 @@ var threeStarsCars = [
   {name:"CELICA XX 2800GT MA61",power:420,speed:2126,acceleration:526,handling:2126,nitro:3626,efficiency:325},
   {name:"ROADSTER NCEC",power:420,speed:2125,acceleration:525,handling:2225,nitro:3525,efficiency:305},
   {name:"CR-Z ZF2",power:419,speed:2088,acceleration:618,handling:2088,nitro:3588,efficiency:265},
+  {name:"デロハチ",power:416,speed:2196,acceleration:546,handling:2246,nitro:3346,efficiency:255},
   {name:"SPRINTER TRUENO AE86",power:416,speed:2096,acceleration:546,handling:2196,nitro:3496,efficiency:305},
   {name:"SPRINTER TRUENO AE86 -Version 164-",power:416,speed:2096,acceleration:546,handling:2196,nitro:3496,efficiency:305},
   {name:"SPRINTER TRUENO AE86-爆エコ-",power:411,speed:2076,acceleration:526,handling:2196,nitro:3426,efficiency:285},
