@@ -477,6 +477,7 @@ sevenStarsCars = [
   {name:"NISSAN GT-R R35 \"不知火\"",power:665,speed:3234,acceleration:1838,handling:3514,nitro:4720,efficiency:760},
   {name:"NISSAN GT-R NISMO MY17 相葉瞬Ver. (R35)",power:663,speed:3223,acceleration:1802,handling:3503,nitro:4731,efficiency:750},
   {name:"NSX NC1 \"PHELIOS\"",power:663,speed:3303,acceleration:1953,handling:3643,nitro:4363,efficiency:755},
+  {name:"911 GT3 991",power:662,speed:3355,acceleration:1903,handling:3396,nitro:4585,efficiency:760},
   {name:"NISSAN GT-R 50th Anniversary (R35)",power:662,speed:3272,acceleration:1672,handling:3565,nitro:4730,efficiency:760},
   {name:"NISSAN GT-R Premium edition MY20 (R35)",power:661,speed:3264,acceleration:1668,handling:3561,nitro:4727,efficiency:760},
   {name:"NISSAN GT-R NISMO R35 2017",power:660,speed:3201,acceleration:1732,handling:3536,nitro:4731,efficiency:750},
