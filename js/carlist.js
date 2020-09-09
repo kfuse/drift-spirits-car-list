@@ -218,6 +218,7 @@ fiveStarsCars = [
   {name:"SILVIA K's \"Nightmare\" (S13)",power:529,speed:2769,acceleration:1343,handling:2930,nitro:3557,efficiency:500},
   {name:"WRX STI Type S VAB \"Basilisk\"",power:528,speed:2887,acceleration:1413,handling:2797,nitro:3482,efficiency:495},
   {name:"RC410 \"Ritsuko\"SP",power:528,speed:2911,acceleration:1301,handling:2911,nitro:3436,efficiency:495},
+  {name:"EVOLVER \"Hibiki\"SP",power:528,speed:3004,acceleration:1595,handling:2257,nitro:3703,efficiency:500},
   {name:"AUTO PRODUCE BOSS WRX",power:528,speed:2833,acceleration:1176,handling:2879,nitro:3671,efficiency:500},
   {name:"Ford GT \"Heaven and Hell\"",power:528,speed:2580,acceleration:1369,handling:2810,nitro:3810,efficiency:505},
   {name:"DIGNISTAR \"Yukiho\"SP",power:527,speed:2799,acceleration:1280,handling:2780,nitro:3680,efficiency:495},
