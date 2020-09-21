@@ -340,6 +340,7 @@ fiveStarsCars = [
   {name:"DUNLOP OTG 86",power:517,speed:2777,acceleration:1209,handling:2968,nitro:3400,efficiency:500},
   {name:"BMW M5 F10M",power:517,speed:2612,acceleration:962,handling:2612,nitro:4162,efficiency:500},
   {name:"GULF ZESTINO S2000",power:516,speed:2630,acceleration:1180,handling:2930,nitro:3580,efficiency:470},
+  {name:"COMFORT GT-Z SUPERCHARGER SXS13Y",power:516,speed:2693,acceleration:1498,handling:2859,nitro:3269,efficiency:480},
   {name:"SKYLINE GT-R BNR32 友也Ver.",power:516,speed:2873,acceleration:1085,handling:2639,nitro:3721,efficiency:485},
   {name:"[XD]CHASER JZX100",power:516,speed:2830,acceleration:1122,handling:2810,nitro:3557,efficiency:490,xd:true},
   {name:"[XD]RX-8 SE3P",power:516,speed:2583,acceleration:937,handling:2727,nitro:4080,efficiency:495,xd:true},
