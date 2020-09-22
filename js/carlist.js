@@ -229,6 +229,7 @@ fiveStarsCars = [
   {name:"D'zgarage7",power:527,speed:2681,acceleration:1267,handling:2679,nitro:3912,efficiency:510},
   {name:"RX-7 FC3S [PROJECT.D] オーラVer.",power:527,speed:2735,acceleration:1144,handling:3047,nitro:3613,efficiency:510},
   {name:"Rt35",power:527,speed:2664,acceleration:1261,handling:2815,nitro:3819,efficiency:515},
+  {name:"M6 Gran Coupe F06",power:526,speed:2761,acceleration:1192,handling:2761,nitro:3825,efficiency:495},
   {name:"180SX \"ゲテちゃん\" (RPS13)",power:526,speed:2654,acceleration:1093,handling:3009,nitro:3763,efficiency:495},
   {name:"メカドック CR-X ミッド リアルVer.",power:526,speed:2622,acceleration:1435,handling:2602,nitro:3860,efficiency:495},
   {name:"SKYLINE GT-R \"風花\" (BCNR33)",power:526,speed:2743,acceleration:1243,handling:2846,nitro:3687,efficiency:495},
