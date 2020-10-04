@@ -283,6 +283,7 @@ fiveStarsCars = [
   {name:"RX-7 FD3S \"Fatal Stinger・改\"",power:522,speed:2709,acceleration:1361,handling:3005,nitro:3380,efficiency:490},
   {name:"S2000 AP1 城島Ver.",power:522,speed:2621,acceleration:1271,handling:2612,nitro:3955,efficiency:490},
   {name:"TONE RT 4413 #773",power:522,speed:2873,acceleration:1075,handling:2932,nitro:3565,efficiency:495},
+  {name:"[XD]S2000 AP1",power:522,speed:2734,acceleration:1107,handling:2854,nitro:3764,efficiency:500,xd:true},
   {name:"GT-R BNR34 星野Ver. -究極コラボ-",power:522,speed:2631,acceleration:943,handling:3043,nitro:3828,efficiency:500},
   {name:"LANCER Evolution VII GSR CT9A 小早川Ver.",power:522,speed:2664,acceleration:1187,handling:2687,nitro:3901,efficiency:505},
   {name:"GT-R R35 アライズ -究極コラボ-",power:522,speed:2771,acceleration:1026,handling:2443,nitro:4212,efficiency:505},
