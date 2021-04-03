@@ -18,6 +18,7 @@ var threeStarsCars = [
   {name:"PIAZZA JR130",power:424,speed:2142,acceleration:535,handling:2277,nitro:3528,efficiency:300},
   {name:"TOYOTA 86 ZN6",power:424,speed:2147,acceleration:547,handling:2247,nitro:3547,efficiency:300},
   {name:"SUBARU BRZ ZC6",power:424,speed:2147,acceleration:547,handling:2247,nitro:3547,efficiency:300},
+  {name:"BMW 2002 turbo E20",power:422,speed:2125,acceleration:786,handling:2125,nitro:3423,efficiency:265},
   {name:"SYNCi \"PAC-MAN\" SP",power:422,speed:2156,acceleration:836,handling:2156,nitro:3306,efficiency:310},
   {name:"FTO DE3A",power:421,speed:2147,acceleration:547,handling:2197,nitro:3547,efficiency:310},
   {name:"FAIRLADY Z S30-爆高-",power:421,speed:2296,acceleration:446,handling:2196,nitro:3496,efficiency:350},
@@ -210,6 +211,7 @@ fourStarsCars = [
   {name:"SPORTS800 UP15",power:430,speed:2153,acceleration:653,handling:2153,nitro:3653,efficiency:345}
 ],
 fiveStarsCars = [
+  {name:"GR YARIS 1st Edition RZ \"High performance\" GXPA16",power:534,speed:2910,acceleration:1513,handling:3015,nitro:3261,efficiency:505},
   {name:"IMPREZA WRX STi GC8 藤原文太 オーラVer.",power:533,speed:2915,acceleration:1232,handling:2934,nitro:3578,efficiency:515},
   {name:"GReddy 35RX spec-D'18",power:533,speed:3014,acceleration:1392,handling:2734,nitro:3520,efficiency:520},
   {name:"VIPER SRT10 \"Jormungand\"",power:533,speed:2788,acceleration:1393,handling:2756,nitro:3740,efficiency:525},
@@ -469,6 +471,7 @@ fiveStarsCars = [
   {name:"2000GT MF10",power:467,speed:2310,acceleration:810,handling:2410,nitro:3810,efficiency:440}
 ],
 sixStarsCars = [
+  {name:"TEAM D-MAX S15 SILVIA 2JZ 4号機 (S15)",power:595,speed:2982,acceleration:1792,handling:3562,nitro:3583,efficiency:620},
   {name:"GR Supra MONSTER Edition",power:590,speed:2625,acceleration:1418,handling:4346,nitro:3410,efficiency:635},
   {name:"CORVETTE C8 3LT Z51 Performance Package",power:589,speed:3096,acceleration:1658,handling:3244,nitro:3801,efficiency:615},
   {name:"RE雨宮 K&N RX-7'20",power:589,speed:3196,acceleration:1696,handling:3284,nitro:3623,efficiency:630},
@@ -505,6 +508,7 @@ sixStarsCars = [
   {name:"FAIRLADY Z S30 -Version 735-'19",power:572,speed:2835,acceleration:1280,handling:3710,nitro:3624,efficiency:610},
   {name:"FEED 魔王 FD3S",power:572,speed:2806,acceleration:1532,handling:2956,nitro:4148,efficiency:620},
   {name:"Huracan LP610-4",power:571,speed:2828,acceleration:1457,handling:2916,nitro:4218,efficiency:595},
+  {name:"CIVIC TYPE-R EK9 \"Wild Wing\"",power:571,speed:2902,acceleration:1708,handling:3078,nitro:3751,efficiency:600},
   {name:"ROADSTER S Special Package ND5RC \"Crimson Dagger\"",power:571,speed:3027,acceleration:1592,handling:3177,nitro:3643,efficiency:600},
   {name:"SAVANNA RX-7 SA22C TURBO SE-Limited \"烈風\"",power:571,speed:3034,acceleration:1483,handling:3183,nitro:3739,efficiency:605},
   {name:"Aventador LP700-4",power:571,speed:2974,acceleration:1484,handling:2954,nitro:4014,efficiency:605},
